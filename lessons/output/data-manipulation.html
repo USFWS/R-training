@@ -1,0 +1,4113 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>3 Data Manipulation | R Course: Data Manipulation and Visualization</title>
+  <meta name="description" content="3 Data Manipulation | R Course: Data Manipulation and Visualization" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="3 Data Manipulation | R Course: Data Manipulation and Visualization" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="3 Data Manipulation | R Course: Data Manipulation and Visualization" />
+  
+  
+  
+
+
+
+<meta name="date" content="2022-03-04" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="review.html"/>
+<link rel="next" href="data-visualization.html"/>
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Overview</a></li>
+<li class="chapter" data-level="2" data-path="review.html"><a href="review.html"><i class="fa fa-check"></i><b>2</b> Review</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="review.html"><a href="review.html#data-types"><i class="fa fa-check"></i><b>2.1</b> Data types</a></li>
+<li class="chapter" data-level="2.2" data-path="review.html"><a href="review.html#data-structures"><i class="fa fa-check"></i><b>2.2</b> Data structures</a></li>
+<li class="chapter" data-level="2.3" data-path="review.html"><a href="review.html#functions"><i class="fa fa-check"></i><b>2.3</b> Functions</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="data-manipulation.html"><a href="data-manipulation.html"><i class="fa fa-check"></i><b>3</b> Data Manipulation</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="data-manipulation.html"><a href="data-manipulation.html#common-operations"><i class="fa fa-check"></i><b>3.1</b> Common operations</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="data-manipulation.html"><a href="data-manipulation.html#base-r"><i class="fa fa-check"></i><b>3.1.1</b> Base R</a></li>
+<li class="chapter" data-level="3.1.2" data-path="data-manipulation.html"><a href="data-manipulation.html#tidyverse"><i class="fa fa-check"></i><b>3.1.2</b> Tidyverse</a></li>
+<li class="chapter" data-level="3.1.3" data-path="data-manipulation.html"><a href="data-manipulation.html#comparing-the-base-and-tidy-datasets"><i class="fa fa-check"></i><b>3.1.3</b> Comparing the base and tidy datasets</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="data-manipulation.html"><a href="data-manipulation.html#long-and-wide-data"><i class="fa fa-check"></i><b>3.2</b> Long and wide data</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="data-visualization.html"><a href="data-visualization.html"><i class="fa fa-check"></i><b>4</b> Data Visualization</a></li>
+<li class="chapter" data-level="5" data-path="exercises.html"><a href="exercises.html"><i class="fa fa-check"></i><b>5</b> Exercises</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">R Course: Data Manipulation and Visualization</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="data-manipulation" class="section level1" number="3">
+<h1><span class="header-section-number">3</span> Data Manipulation</h1>
+<p>There are multiple ways to do almost anything in R. Here we cover two groups of functions
+that can be used for data manipulation. The first one is <a href="https://stat.ethz.ch/R-manual/R-devel/library/base/html/00Index.html">base R</a>, which describes functions that are built in to R. The second is the <a href="https://www.tidyverse.org/">Tidyverse</a>, which describes a suite of external packages that help streamline these operations. Within
+the tidyverse, we’re going to focus on the dplyr, tidyr, readr, and ggplot2 libraries. Both approaches are useful and prevalent. Having some familiarity with both will allow you to
+decide when you prefer and will make it easier to collaborate with other researchers.</p>
+<p>In this chapter we present common data manipulation operations by example using DJFMP trawl data obtained from the <a href="https://doi.org/10.6073/pasta/8dfe5eac4ecf157b7b91ced772aa214a">Environmental Data Initiative</a>. The
+goal is to produce a dataset that contains total catch by species (across all fork
+lengths) for each tow at Chipps Island during May of 2017, and to include site coordinates.
+We carry out the process using only base R functions, then repeat the process using
+functions from the tidyverse packages dplyr, tidyr, and readr, as well as the lubridate package.</p>
+<p>You’ll notice that the tidyverse approach to generating the desired dataset is more
+streamlined and compact than the base R approach. At the same time, base R functions can
+allow for a lot of flexibility and are less likely to change than tidyverse functions,
+which are frequently under development these days.</p>
+<p>We also introduce the concepts of long data and wide data, which will be important in
+later chapters.</p>
+<div id="common-operations" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> Common operations</h2>
+<p>This example uses the following operations:</p>
+<ul>
+<li>read in data from a file</li>
+<li>reformat existing fields and add new fields</li>
+<li>subset/filter</li>
+<li>join different datasets together</li>
+<li>select fields to keep</li>
+<li>group and summarize/aggregate</li>
+<li>handle missing values</li>
+<li>sort data according to specific fields</li>
+<li>write data to a file</li>
+</ul>
+<div id="base-r" class="section level3" number="3.1.1">
+<h3><span class="header-section-number">3.1.1</span> Base R</h3>
+<p><strong>Read in data:</strong></p>
+<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="data-manipulation.html#cb25-1" aria-hidden="true" tabindex="-1"></a>trawl_file <span class="ot">&lt;-</span> <span class="fu">file.path</span>(root,<span class="st">&quot;data&quot;</span>,<span class="st">&quot;edi.244.8_abridged&quot;</span>,</span>
+<span id="cb25-2"><a href="data-manipulation.html#cb25-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;2017-2021_DJFMP_chipps_trawl_fish_and_water_quality_data.csv&quot;</span>)</span>
+<span id="cb25-3"><a href="data-manipulation.html#cb25-3" aria-hidden="true" tabindex="-1"></a>station_file <span class="ot">&lt;-</span> <span class="fu">file.path</span>(root,<span class="st">&quot;data&quot;</span>,<span class="st">&quot;edi.244.8_abridged&quot;</span>,<span class="st">&quot;DJFMP_Site_Locations.csv&quot;</span>)</span>
+<span id="cb25-4"><a href="data-manipulation.html#cb25-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-5"><a href="data-manipulation.html#cb25-5" aria-hidden="true" tabindex="-1"></a>trawl_data <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(trawl_file, <span class="at">stringsAsFactors=</span><span class="cn">FALSE</span>)</span>
+<span id="cb25-6"><a href="data-manipulation.html#cb25-6" aria-hidden="true" tabindex="-1"></a>station_data <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(station_file, <span class="at">stringsAsFactors=</span><span class="cn">FALSE</span>)</span></code></pre></div>
+<code>trawl_data</code>:
+<table class="table" style="font-size: 13px; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+Location
+</th>
+<th style="text-align:right;">
+RegionCode
+</th>
+<th style="text-align:left;">
+StationCode
+</th>
+<th style="text-align:left;">
+SampleDate
+</th>
+<th style="text-align:left;">
+SampleTime
+</th>
+<th style="text-align:left;">
+MethodCode
+</th>
+<th style="text-align:right;">
+GearConditionCode
+</th>
+<th style="text-align:left;">
+WeatherCode
+</th>
+<th style="text-align:right;">
+DO
+</th>
+<th style="text-align:right;">
+WaterTemp
+</th>
+<th style="text-align:right;">
+Turbidity
+</th>
+<th style="text-align:right;">
+Secchi
+</th>
+<th style="text-align:right;">
+SpecificConductance
+</th>
+<th style="text-align:right;">
+TowNumber
+</th>
+<th style="text-align:left;">
+SamplingDirection
+</th>
+<th style="text-align:right;">
+TowDuration
+</th>
+<th style="text-align:left;">
+FlowDebris
+</th>
+<th style="text-align:left;">
+SiteDisturbance
+</th>
+<th style="text-align:left;">
+AlternateSite
+</th>
+<th style="text-align:left;">
+SeineLength
+</th>
+<th style="text-align:left;">
+SeineWidth
+</th>
+<th style="text-align:left;">
+SeineDepth
+</th>
+<th style="text-align:right;">
+FlowmeterStart
+</th>
+<th style="text-align:right;">
+FlowmeterEnd
+</th>
+<th style="text-align:right;">
+FlowmeterDifference
+</th>
+<th style="text-align:right;">
+Volume
+</th>
+<th style="text-align:left;">
+OrganismCode
+</th>
+<th style="text-align:left;">
+IEPFishCode
+</th>
+<th style="text-align:left;">
+CommonName
+</th>
+<th style="text-align:left;">
+MarkCode
+</th>
+<th style="text-align:right;">
+StageCode
+</th>
+<th style="text-align:left;">
+Expression
+</th>
+<th style="text-align:right;">
+ForkLength
+</th>
+<th style="text-align:left;">
+RaceByLength
+</th>
+<th style="text-align:right;">
+TagCode
+</th>
+<th style="text-align:left;">
+RaceByTag
+</th>
+<th style="text-align:left;">
+ArchivalID
+</th>
+<th style="text-align:left;">
+SpecialStudyID
+</th>
+<th style="text-align:left;">
+GeneticID
+</th>
+<th style="text-align:right;">
+Probability1
+</th>
+<th style="text-align:left;">
+GeneticID2
+</th>
+<th style="text-align:right;">
+Probability2
+</th>
+<th style="text-align:left;">
+SexGeneID
+</th>
+<th style="text-align:left;">
+Ots28
+</th>
+<th style="text-align:left;">
+Lab
+</th>
+<th style="text-align:left;">
+GeneticTest
+</th>
+<th style="text-align:left;">
+GeneticModel
+</th>
+<th style="text-align:right;">
+Count
+</th>
+<th style="text-align:right;">
+Year
+</th>
+<th style="text-align:right;">
+Month
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Chipps Island
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:left;">
+SB018S
+</td>
+<td style="text-align:left;">
+2017-01-03
+</td>
+<td style="text-align:left;">
+07:39:00
+</td>
+<td style="text-align:left;">
+MWTR
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+RAN
+</td>
+<td style="text-align:right;">
+13.04
+</td>
+<td style="text-align:right;">
+8.1
+</td>
+<td style="text-align:right;">
+42.5
+</td>
+<td style="text-align:right;">
+0.36
+</td>
+<td style="text-align:right;">
+199.4
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:right;">
+20
+</td>
+<td style="text-align:left;">
+N
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+584752
+</td>
+<td style="text-align:right;">
+627607
+</td>
+<td style="text-align:right;">
+42855
+</td>
+<td style="text-align:right;">
+21397.52
+</td>
+<td style="text-align:left;">
+AMS
+</td>
+<td style="text-align:left;">
+AMESHA
+</td>
+<td style="text-align:left;">
+American shad
+</td>
+<td style="text-align:left;">
+None
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+70
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+2017
+</td>
+<td style="text-align:right;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Chipps Island
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:left;">
+SB018S
+</td>
+<td style="text-align:left;">
+2017-01-03
+</td>
+<td style="text-align:left;">
+07:39:00
+</td>
+<td style="text-align:left;">
+MWTR
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+RAN
+</td>
+<td style="text-align:right;">
+13.04
+</td>
+<td style="text-align:right;">
+8.1
+</td>
+<td style="text-align:right;">
+42.5
+</td>
+<td style="text-align:right;">
+0.36
+</td>
+<td style="text-align:right;">
+199.4
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:right;">
+20
+</td>
+<td style="text-align:left;">
+N
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+584752
+</td>
+<td style="text-align:right;">
+627607
+</td>
+<td style="text-align:right;">
+42855
+</td>
+<td style="text-align:right;">
+21397.52
+</td>
+<td style="text-align:left;">
+AMS
+</td>
+<td style="text-align:left;">
+AMESHA
+</td>
+<td style="text-align:left;">
+American shad
+</td>
+<td style="text-align:left;">
+None
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+71
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+2017
+</td>
+<td style="text-align:right;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Chipps Island
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:left;">
+SB018S
+</td>
+<td style="text-align:left;">
+2017-01-03
+</td>
+<td style="text-align:left;">
+07:39:00
+</td>
+<td style="text-align:left;">
+MWTR
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+RAN
+</td>
+<td style="text-align:right;">
+13.04
+</td>
+<td style="text-align:right;">
+8.1
+</td>
+<td style="text-align:right;">
+42.5
+</td>
+<td style="text-align:right;">
+0.36
+</td>
+<td style="text-align:right;">
+199.4
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:right;">
+20
+</td>
+<td style="text-align:left;">
+N
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+584752
+</td>
+<td style="text-align:right;">
+627607
+</td>
+<td style="text-align:right;">
+42855
+</td>
+<td style="text-align:right;">
+21397.52
+</td>
+<td style="text-align:left;">
+AMS
+</td>
+<td style="text-align:left;">
+AMESHA
+</td>
+<td style="text-align:left;">
+American shad
+</td>
+<td style="text-align:left;">
+None
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+75
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+2017
+</td>
+<td style="text-align:right;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Chipps Island
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:left;">
+SB018S
+</td>
+<td style="text-align:left;">
+2017-01-03
+</td>
+<td style="text-align:left;">
+07:39:00
+</td>
+<td style="text-align:left;">
+MWTR
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+RAN
+</td>
+<td style="text-align:right;">
+13.04
+</td>
+<td style="text-align:right;">
+8.1
+</td>
+<td style="text-align:right;">
+42.5
+</td>
+<td style="text-align:right;">
+0.36
+</td>
+<td style="text-align:right;">
+199.4
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:right;">
+20
+</td>
+<td style="text-align:left;">
+N
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+584752
+</td>
+<td style="text-align:right;">
+627607
+</td>
+<td style="text-align:right;">
+42855
+</td>
+<td style="text-align:right;">
+21397.52
+</td>
+<td style="text-align:left;">
+AMS
+</td>
+<td style="text-align:left;">
+AMESHA
+</td>
+<td style="text-align:left;">
+American shad
+</td>
+<td style="text-align:left;">
+None
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+94
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+2017
+</td>
+<td style="text-align:right;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Chipps Island
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:left;">
+SB018S
+</td>
+<td style="text-align:left;">
+2017-01-03
+</td>
+<td style="text-align:left;">
+07:39:00
+</td>
+<td style="text-align:left;">
+MWTR
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+RAN
+</td>
+<td style="text-align:right;">
+13.04
+</td>
+<td style="text-align:right;">
+8.1
+</td>
+<td style="text-align:right;">
+42.5
+</td>
+<td style="text-align:right;">
+0.36
+</td>
+<td style="text-align:right;">
+199.4
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:right;">
+20
+</td>
+<td style="text-align:left;">
+N
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+584752
+</td>
+<td style="text-align:right;">
+627607
+</td>
+<td style="text-align:right;">
+42855
+</td>
+<td style="text-align:right;">
+21397.52
+</td>
+<td style="text-align:left;">
+CHN
+</td>
+<td style="text-align:left;">
+CHISAL
+</td>
+<td style="text-align:left;">
+Chinook salmon
+</td>
+<td style="text-align:left;">
+AdClipped
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+144
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+55862
+</td>
+<td style="text-align:left;">
+LateFall
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+2017
+</td>
+<td style="text-align:right;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Chipps Island
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:left;">
+SB018S
+</td>
+<td style="text-align:left;">
+2017-01-03
+</td>
+<td style="text-align:left;">
+07:39:00
+</td>
+<td style="text-align:left;">
+MWTR
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+RAN
+</td>
+<td style="text-align:right;">
+13.04
+</td>
+<td style="text-align:right;">
+8.1
+</td>
+<td style="text-align:right;">
+42.5
+</td>
+<td style="text-align:right;">
+0.36
+</td>
+<td style="text-align:right;">
+199.4
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:right;">
+20
+</td>
+<td style="text-align:left;">
+N
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+584752
+</td>
+<td style="text-align:right;">
+627607
+</td>
+<td style="text-align:right;">
+42855
+</td>
+<td style="text-align:right;">
+21397.52
+</td>
+<td style="text-align:left;">
+LFS
+</td>
+<td style="text-align:left;">
+LONSME
+</td>
+<td style="text-align:left;">
+longfin smelt
+</td>
+<td style="text-align:left;">
+None
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+E
+</td>
+<td style="text-align:right;">
+93
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+2017
+</td>
+<td style="text-align:right;">
+1
+</td>
+</tr>
+</tbody>
+</table>
+<code>station_data</code>:
+<table class="table" style="font-size: 13px; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+MethodCode
+</th>
+<th style="text-align:left;">
+Location
+</th>
+<th style="text-align:left;">
+StationCode
+</th>
+<th style="text-align:right;">
+Latitude
+</th>
+<th style="text-align:right;">
+Longitude
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+SEIN
+</td>
+<td style="text-align:left;">
+American River
+</td>
+<td style="text-align:left;">
+AM001S
+</td>
+<td style="text-align:right;">
+38.59936
+</td>
+<td style="text-align:right;">
+-121.5057
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SEIN
+</td>
+<td style="text-align:left;">
+King’s Island
+</td>
+<td style="text-align:left;">
+DS002S
+</td>
+<td style="text-align:right;">
+38.05877
+</td>
+<td style="text-align:right;">
+-121.4584
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SEIN
+</td>
+<td style="text-align:left;">
+Georgiana Slough
+</td>
+<td style="text-align:left;">
+GS010E
+</td>
+<td style="text-align:right;">
+38.22586
+</td>
+<td style="text-align:right;">
+-121.5272
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SEIN
+</td>
+<td style="text-align:left;">
+Liberty Island
+</td>
+<td style="text-align:left;">
+LI001E
+</td>
+<td style="text-align:right;">
+38.24197
+</td>
+<td style="text-align:right;">
+-121.6823
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SEIN
+</td>
+<td style="text-align:left;">
+Liberty Island
+</td>
+<td style="text-align:left;">
+LI001W
+</td>
+<td style="text-align:right;">
+38.27744
+</td>
+<td style="text-align:right;">
+-121.6942
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SEIN
+</td>
+<td style="text-align:left;">
+Liberty Island
+</td>
+<td style="text-align:left;">
+LI002E
+</td>
+<td style="text-align:right;">
+38.24636
+</td>
+<td style="text-align:right;">
+-121.6781
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Reformat and add new fields:</strong></p>
+<div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb26-1"><a href="data-manipulation.html#cb26-1" aria-hidden="true" tabindex="-1"></a>trawl_data<span class="sc">$</span>SampleDate <span class="ot">&lt;-</span> <span class="fu">as.Date</span>(trawl_data<span class="sc">$</span>SampleDate)</span>
+<span id="cb26-2"><a href="data-manipulation.html#cb26-2" aria-hidden="true" tabindex="-1"></a>trawl_data<span class="sc">$</span>Year <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(<span class="fu">format</span>(trawl_data<span class="sc">$</span>SampleDate, <span class="st">&quot;%Y&quot;</span>))</span>
+<span id="cb26-3"><a href="data-manipulation.html#cb26-3" aria-hidden="true" tabindex="-1"></a>trawl_data<span class="sc">$</span>Month <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(<span class="fu">format</span>(trawl_data<span class="sc">$</span>SampleDate, <span class="st">&quot;%m&quot;</span>))</span></code></pre></div>
+<p><strong>Subet/filter:</strong></p>
+<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="data-manipulation.html#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="fu">unique</span>(trawl_data<span class="sc">$</span>Location)</span></code></pre></div>
+<pre><code>## [1] &quot;Chipps Island&quot;</code></pre>
+<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="data-manipulation.html#cb29-1" aria-hidden="true" tabindex="-1"></a>chipps_data <span class="ot">&lt;-</span> <span class="fu">subset</span>(trawl_data, Year <span class="sc">==</span> <span class="dv">2017</span> <span class="sc">&amp;</span> Month <span class="sc">==</span> <span class="dv">5</span> <span class="sc">&amp;</span> Location <span class="sc">==</span> <span class="st">&quot;Chipps Island&quot;</span>)</span></code></pre></div>
+<p><strong>Join:</strong></p>
+<div class="sourceCode" id="cb30"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb30-1"><a href="data-manipulation.html#cb30-1" aria-hidden="true" tabindex="-1"></a>chipps_data <span class="ot">&lt;-</span> <span class="fu">merge</span>(<span class="at">x=</span>chipps_data,</span>
+<span id="cb30-2"><a href="data-manipulation.html#cb30-2" aria-hidden="true" tabindex="-1"></a>                     <span class="at">y=</span>station_data,</span>
+<span id="cb30-3"><a href="data-manipulation.html#cb30-3" aria-hidden="true" tabindex="-1"></a>                     <span class="at">by=</span><span class="fu">c</span>(<span class="st">&quot;MethodCode&quot;</span>,<span class="st">&quot;Location&quot;</span>,<span class="st">&quot;StationCode&quot;</span>),</span>
+<span id="cb30-4"><a href="data-manipulation.html#cb30-4" aria-hidden="true" tabindex="-1"></a>                     <span class="at">all.x=</span><span class="cn">TRUE</span>)</span></code></pre></div>
+<table class="table" style="font-size: 13px; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+MethodCode
+</th>
+<th style="text-align:left;">
+Location
+</th>
+<th style="text-align:left;">
+StationCode
+</th>
+<th style="text-align:right;">
+RegionCode
+</th>
+<th style="text-align:left;">
+SampleDate
+</th>
+<th style="text-align:left;">
+SampleTime
+</th>
+<th style="text-align:right;">
+GearConditionCode
+</th>
+<th style="text-align:left;">
+WeatherCode
+</th>
+<th style="text-align:right;">
+DO
+</th>
+<th style="text-align:right;">
+WaterTemp
+</th>
+<th style="text-align:right;">
+Turbidity
+</th>
+<th style="text-align:right;">
+Secchi
+</th>
+<th style="text-align:right;">
+SpecificConductance
+</th>
+<th style="text-align:right;">
+TowNumber
+</th>
+<th style="text-align:left;">
+SamplingDirection
+</th>
+<th style="text-align:right;">
+TowDuration
+</th>
+<th style="text-align:left;">
+FlowDebris
+</th>
+<th style="text-align:left;">
+SiteDisturbance
+</th>
+<th style="text-align:left;">
+AlternateSite
+</th>
+<th style="text-align:left;">
+SeineLength
+</th>
+<th style="text-align:left;">
+SeineWidth
+</th>
+<th style="text-align:left;">
+SeineDepth
+</th>
+<th style="text-align:right;">
+FlowmeterStart
+</th>
+<th style="text-align:right;">
+FlowmeterEnd
+</th>
+<th style="text-align:right;">
+FlowmeterDifference
+</th>
+<th style="text-align:right;">
+Volume
+</th>
+<th style="text-align:left;">
+OrganismCode
+</th>
+<th style="text-align:left;">
+IEPFishCode
+</th>
+<th style="text-align:left;">
+CommonName
+</th>
+<th style="text-align:left;">
+MarkCode
+</th>
+<th style="text-align:right;">
+StageCode
+</th>
+<th style="text-align:left;">
+Expression
+</th>
+<th style="text-align:right;">
+ForkLength
+</th>
+<th style="text-align:left;">
+RaceByLength
+</th>
+<th style="text-align:right;">
+TagCode
+</th>
+<th style="text-align:left;">
+RaceByTag
+</th>
+<th style="text-align:left;">
+ArchivalID
+</th>
+<th style="text-align:left;">
+SpecialStudyID
+</th>
+<th style="text-align:left;">
+GeneticID
+</th>
+<th style="text-align:right;">
+Probability1
+</th>
+<th style="text-align:left;">
+GeneticID2
+</th>
+<th style="text-align:right;">
+Probability2
+</th>
+<th style="text-align:left;">
+SexGeneID
+</th>
+<th style="text-align:left;">
+Ots28
+</th>
+<th style="text-align:left;">
+Lab
+</th>
+<th style="text-align:left;">
+GeneticTest
+</th>
+<th style="text-align:left;">
+GeneticModel
+</th>
+<th style="text-align:right;">
+Count
+</th>
+<th style="text-align:right;">
+Year
+</th>
+<th style="text-align:right;">
+Month
+</th>
+<th style="text-align:right;">
+Latitude
+</th>
+<th style="text-align:right;">
+Longitude
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+MWTR
+</td>
+<td style="text-align:left;">
+Chipps Island
+</td>
+<td style="text-align:left;">
+SB018M
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:left;">
+2017-05-01
+</td>
+<td style="text-align:left;">
+07:30:00
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+CLR
+</td>
+<td style="text-align:right;">
+12.87
+</td>
+<td style="text-align:right;">
+15.9
+</td>
+<td style="text-align:right;">
+30.3
+</td>
+<td style="text-align:right;">
+0.63
+</td>
+<td style="text-align:right;">
+96.4
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:right;">
+20
+</td>
+<td style="text-align:left;">
+N
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+518147
+</td>
+<td style="text-align:right;">
+560176
+</td>
+<td style="text-align:right;">
+42029
+</td>
+<td style="text-align:right;">
+20985.09
+</td>
+<td style="text-align:left;">
+CHN
+</td>
+<td style="text-align:left;">
+CHISAL
+</td>
+<td style="text-align:left;">
+Chinook salmon
+</td>
+<td style="text-align:left;">
+AdClipped
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+76
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+60968
+</td>
+<td style="text-align:left;">
+Fall
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+2017
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+38.04598
+</td>
+<td style="text-align:right;">
+-121.9099
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+MWTR
+</td>
+<td style="text-align:left;">
+Chipps Island
+</td>
+<td style="text-align:left;">
+SB018M
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:left;">
+2017-05-01
+</td>
+<td style="text-align:left;">
+07:30:00
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+CLR
+</td>
+<td style="text-align:right;">
+12.87
+</td>
+<td style="text-align:right;">
+15.9
+</td>
+<td style="text-align:right;">
+30.3
+</td>
+<td style="text-align:right;">
+0.63
+</td>
+<td style="text-align:right;">
+96.4
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:right;">
+20
+</td>
+<td style="text-align:left;">
+N
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+518147
+</td>
+<td style="text-align:right;">
+560176
+</td>
+<td style="text-align:right;">
+42029
+</td>
+<td style="text-align:right;">
+20985.09
+</td>
+<td style="text-align:left;">
+CHN
+</td>
+<td style="text-align:left;">
+CHISAL
+</td>
+<td style="text-align:left;">
+Chinook salmon
+</td>
+<td style="text-align:left;">
+AdClipped
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+76
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+60969
+</td>
+<td style="text-align:left;">
+Fall
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+2017
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+38.04598
+</td>
+<td style="text-align:right;">
+-121.9099
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+MWTR
+</td>
+<td style="text-align:left;">
+Chipps Island
+</td>
+<td style="text-align:left;">
+SB018M
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:left;">
+2017-05-01
+</td>
+<td style="text-align:left;">
+07:30:00
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+CLR
+</td>
+<td style="text-align:right;">
+12.87
+</td>
+<td style="text-align:right;">
+15.9
+</td>
+<td style="text-align:right;">
+30.3
+</td>
+<td style="text-align:right;">
+0.63
+</td>
+<td style="text-align:right;">
+96.4
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:right;">
+20
+</td>
+<td style="text-align:left;">
+N
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+518147
+</td>
+<td style="text-align:right;">
+560176
+</td>
+<td style="text-align:right;">
+42029
+</td>
+<td style="text-align:right;">
+20985.09
+</td>
+<td style="text-align:left;">
+CHN
+</td>
+<td style="text-align:left;">
+CHISAL
+</td>
+<td style="text-align:left;">
+Chinook salmon
+</td>
+<td style="text-align:left;">
+AdClipped
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+80
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+60969
+</td>
+<td style="text-align:left;">
+Fall
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+2017
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+38.04598
+</td>
+<td style="text-align:right;">
+-121.9099
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+MWTR
+</td>
+<td style="text-align:left;">
+Chipps Island
+</td>
+<td style="text-align:left;">
+SB018M
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:left;">
+2017-05-01
+</td>
+<td style="text-align:left;">
+07:30:00
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+CLR
+</td>
+<td style="text-align:right;">
+12.87
+</td>
+<td style="text-align:right;">
+15.9
+</td>
+<td style="text-align:right;">
+30.3
+</td>
+<td style="text-align:right;">
+0.63
+</td>
+<td style="text-align:right;">
+96.4
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:right;">
+20
+</td>
+<td style="text-align:left;">
+N
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+518147
+</td>
+<td style="text-align:right;">
+560176
+</td>
+<td style="text-align:right;">
+42029
+</td>
+<td style="text-align:right;">
+20985.09
+</td>
+<td style="text-align:left;">
+CHN
+</td>
+<td style="text-align:left;">
+CHISAL
+</td>
+<td style="text-align:left;">
+Chinook salmon
+</td>
+<td style="text-align:left;">
+AdClipped
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+83
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+60969
+</td>
+<td style="text-align:left;">
+Fall
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+2017
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+38.04598
+</td>
+<td style="text-align:right;">
+-121.9099
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+MWTR
+</td>
+<td style="text-align:left;">
+Chipps Island
+</td>
+<td style="text-align:left;">
+SB018M
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:left;">
+2017-05-01
+</td>
+<td style="text-align:left;">
+07:30:00
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+CLR
+</td>
+<td style="text-align:right;">
+12.87
+</td>
+<td style="text-align:right;">
+15.9
+</td>
+<td style="text-align:right;">
+30.3
+</td>
+<td style="text-align:right;">
+0.63
+</td>
+<td style="text-align:right;">
+96.4
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:right;">
+20
+</td>
+<td style="text-align:left;">
+N
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+518147
+</td>
+<td style="text-align:right;">
+560176
+</td>
+<td style="text-align:right;">
+42029
+</td>
+<td style="text-align:right;">
+20985.09
+</td>
+<td style="text-align:left;">
+CHN
+</td>
+<td style="text-align:left;">
+CHISAL
+</td>
+<td style="text-align:left;">
+Chinook salmon
+</td>
+<td style="text-align:left;">
+AdClipped
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+86
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+60969
+</td>
+<td style="text-align:left;">
+Fall
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+2017
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+38.04598
+</td>
+<td style="text-align:right;">
+-121.9099
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+MWTR
+</td>
+<td style="text-align:left;">
+Chipps Island
+</td>
+<td style="text-align:left;">
+SB018M
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:left;">
+2017-05-01
+</td>
+<td style="text-align:left;">
+07:30:00
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+CLR
+</td>
+<td style="text-align:right;">
+12.87
+</td>
+<td style="text-align:right;">
+15.9
+</td>
+<td style="text-align:right;">
+30.3
+</td>
+<td style="text-align:right;">
+0.63
+</td>
+<td style="text-align:right;">
+96.4
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:right;">
+20
+</td>
+<td style="text-align:left;">
+N
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+518147
+</td>
+<td style="text-align:right;">
+560176
+</td>
+<td style="text-align:right;">
+42029
+</td>
+<td style="text-align:right;">
+20985.09
+</td>
+<td style="text-align:left;">
+CHN
+</td>
+<td style="text-align:left;">
+CHISAL
+</td>
+<td style="text-align:left;">
+Chinook salmon
+</td>
+<td style="text-align:left;">
+AdClipped
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+87
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+56080
+</td>
+<td style="text-align:left;">
+Fall
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+2017
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+38.04598
+</td>
+<td style="text-align:right;">
+-121.9099
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Select fields:</strong></p>
+<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb31-1"><a href="data-manipulation.html#cb31-1" aria-hidden="true" tabindex="-1"></a>chipps_data <span class="ot">&lt;-</span> chipps_data[ ,<span class="fu">c</span>(<span class="st">&quot;Location&quot;</span>,<span class="st">&quot;StationCode&quot;</span>,<span class="st">&quot;Longitude&quot;</span>,<span class="st">&quot;Latitude&quot;</span>,</span>
+<span id="cb31-2"><a href="data-manipulation.html#cb31-2" aria-hidden="true" tabindex="-1"></a>                               <span class="st">&quot;SampleDate&quot;</span>,<span class="st">&quot;SampleTime&quot;</span>,<span class="st">&quot;MethodCode&quot;</span>,<span class="st">&quot;GearConditionCode&quot;</span>,</span>
+<span id="cb31-3"><a href="data-manipulation.html#cb31-3" aria-hidden="true" tabindex="-1"></a>                               <span class="st">&quot;TowNumber&quot;</span>,<span class="st">&quot;Volume&quot;</span>,<span class="st">&quot;WaterTemp&quot;</span>,<span class="st">&quot;OrganismCode&quot;</span>,</span>
+<span id="cb31-4"><a href="data-manipulation.html#cb31-4" aria-hidden="true" tabindex="-1"></a>                               <span class="st">&quot;ForkLength&quot;</span>,<span class="st">&quot;Count&quot;</span>)]</span></code></pre></div>
+<p><strong>Group and summarize/aggregate:</strong></p>
+<div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb32-1"><a href="data-manipulation.html#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Do a little bit of checking:</span></span>
+<span id="cb32-2"><a href="data-manipulation.html#cb32-2" aria-hidden="true" tabindex="-1"></a><span class="fu">unique</span>(chipps_data<span class="sc">$</span>Location)</span></code></pre></div>
+<pre><code>## [1] &quot;Chipps Island&quot;</code></pre>
+<div class="sourceCode" id="cb34"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb34-1"><a href="data-manipulation.html#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="fu">unique</span>(chipps_data<span class="sc">$</span>StationCode)</span></code></pre></div>
+<pre><code>## [1] &quot;SB018M&quot; &quot;SB018N&quot; &quot;SB018S&quot;</code></pre>
+<div class="sourceCode" id="cb36"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb36-1"><a href="data-manipulation.html#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="fu">unique</span>(chipps_data<span class="sc">$</span>MethodCode)</span></code></pre></div>
+<pre><code>## [1] &quot;MWTR&quot;</code></pre>
+<div class="sourceCode" id="cb38"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb38-1"><a href="data-manipulation.html#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="fu">unique</span>(chipps_data<span class="sc">$</span>GearConditionCode)</span></code></pre></div>
+<pre><code>## [1] 1 2</code></pre>
+<div class="sourceCode" id="cb40"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb40-1"><a href="data-manipulation.html#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Split:</span></span>
+<span id="cb40-2"><a href="data-manipulation.html#cb40-2" aria-hidden="true" tabindex="-1"></a>chipps_data_split <span class="ot">&lt;-</span> <span class="fu">split</span>(<span class="at">x=</span>chipps_data, </span>
+<span id="cb40-3"><a href="data-manipulation.html#cb40-3" aria-hidden="true" tabindex="-1"></a>                           <span class="at">f=</span> <span class="sc">~</span> StationCode <span class="sc">+</span> SampleDate <span class="sc">+</span> TowNumber <span class="sc">+</span> OrganismCode, </span>
+<span id="cb40-4"><a href="data-manipulation.html#cb40-4" aria-hidden="true" tabindex="-1"></a>                           <span class="at">drop=</span><span class="cn">TRUE</span>)</span>
+<span id="cb40-5"><a href="data-manipulation.html#cb40-5" aria-hidden="true" tabindex="-1"></a>chipps_data_split[<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>]</span></code></pre></div>
+<pre><code>## $`SB018M.2017-05-07.1.AMS`
+##          Location StationCode Longitude Latitude SampleDate SampleTime MethodCode GearConditionCode
+## 819 Chipps Island      SB018M -121.9099 38.04598 2017-05-07   07:26:00       MWTR                 1
+##     TowNumber   Volume WaterTemp OrganismCode ForkLength Count
+## 819         1 19212.08      17.8          AMS        121     1
+## 
+## $`SB018N.2017-05-08.1.AMS`
+##           Location StationCode Longitude Latitude SampleDate SampleTime MethodCode
+## 1993 Chipps Island      SB018N -121.9099 38.04797 2017-05-08   07:43:00       MWTR
+##      GearConditionCode TowNumber   Volume WaterTemp OrganismCode ForkLength Count
+## 1993                 1         1 18785.68      17.6          AMS        130     1
+## 
+## $`SB018M.2017-05-10.1.AMS`
+##          Location StationCode Longitude Latitude SampleDate SampleTime MethodCode GearConditionCode
+## 444 Chipps Island      SB018M -121.9099 38.04598 2017-05-10   07:52:00       MWTR                 1
+##     TowNumber   Volume WaterTemp OrganismCode ForkLength Count
+## 444         1 15878.25      18.3          AMS        151     1</code></pre>
+<div class="sourceCode" id="cb42"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb42-1"><a href="data-manipulation.html#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate total counts:</span></span>
+<span id="cb42-2"><a href="data-manipulation.html#cb42-2" aria-hidden="true" tabindex="-1"></a>chipps_data_list <span class="ot">&lt;-</span> <span class="fu">lapply</span>(chipps_data_split, <span class="cf">function</span>(x) {</span>
+<span id="cb42-3"><a href="data-manipulation.html#cb42-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># These checks aren&#39;t strictly necessary, but it can be </span></span>
+<span id="cb42-4"><a href="data-manipulation.html#cb42-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># worthwhile to check that the data are as expected:</span></span>
+<span id="cb42-5"><a href="data-manipulation.html#cb42-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stopifnot</span>(<span class="fu">length</span>(<span class="fu">unique</span>(x<span class="sc">$</span>Location)) <span class="sc">==</span> <span class="dv">1</span>)</span>
+<span id="cb42-6"><a href="data-manipulation.html#cb42-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stopifnot</span>(<span class="fu">length</span>(<span class="fu">unique</span>(x<span class="sc">$</span>SampleTime)) <span class="sc">==</span> <span class="dv">1</span>)</span>
+<span id="cb42-7"><a href="data-manipulation.html#cb42-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stopifnot</span>(<span class="fu">length</span>(<span class="fu">unique</span>(x<span class="sc">$</span>MethodCode)) <span class="sc">==</span> <span class="dv">1</span>)</span>
+<span id="cb42-8"><a href="data-manipulation.html#cb42-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stopifnot</span>(<span class="fu">length</span>(<span class="fu">unique</span>(x<span class="sc">$</span>GearConditionCode)) <span class="sc">==</span> <span class="dv">1</span>)</span>
+<span id="cb42-9"><a href="data-manipulation.html#cb42-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stopifnot</span>(<span class="fu">length</span>(<span class="fu">unique</span>(x<span class="sc">$</span>Volume)) <span class="sc">==</span> <span class="dv">1</span>)</span>
+<span id="cb42-10"><a href="data-manipulation.html#cb42-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stopifnot</span>(<span class="fu">length</span>(<span class="fu">unique</span>(x<span class="sc">$</span>WaterTemp)) <span class="sc">==</span> <span class="dv">1</span>)</span>
+<span id="cb42-11"><a href="data-manipulation.html#cb42-11" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb42-12"><a href="data-manipulation.html#cb42-12" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Keep one row per tow:</span></span>
+<span id="cb42-13"><a href="data-manipulation.html#cb42-13" aria-hidden="true" tabindex="-1"></a>  ret <span class="ot">&lt;-</span> x[<span class="dv">1</span>, ]</span>
+<span id="cb42-14"><a href="data-manipulation.html#cb42-14" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb42-15"><a href="data-manipulation.html#cb42-15" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Remove the ForkLength field:</span></span>
+<span id="cb42-16"><a href="data-manipulation.html#cb42-16" aria-hidden="true" tabindex="-1"></a>  ret<span class="sc">$</span>ForkLength <span class="ot">&lt;-</span> <span class="cn">NULL</span></span>
+<span id="cb42-17"><a href="data-manipulation.html#cb42-17" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb42-18"><a href="data-manipulation.html#cb42-18" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Sum over the counts-by-length:</span></span>
+<span id="cb42-19"><a href="data-manipulation.html#cb42-19" aria-hidden="true" tabindex="-1"></a>  ret<span class="sc">$</span>Count <span class="ot">&lt;-</span> <span class="fu">sum</span>(x<span class="sc">$</span>Count)</span>
+<span id="cb42-20"><a href="data-manipulation.html#cb42-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(ret)</span>
+<span id="cb42-21"><a href="data-manipulation.html#cb42-21" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb42-22"><a href="data-manipulation.html#cb42-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-23"><a href="data-manipulation.html#cb42-23" aria-hidden="true" tabindex="-1"></a>chipps_data_list[<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>]</span></code></pre></div>
+<pre><code>## $`SB018M.2017-05-07.1.AMS`
+##          Location StationCode Longitude Latitude SampleDate SampleTime MethodCode GearConditionCode
+## 819 Chipps Island      SB018M -121.9099 38.04598 2017-05-07   07:26:00       MWTR                 1
+##     TowNumber   Volume WaterTemp OrganismCode Count
+## 819         1 19212.08      17.8          AMS     1
+## 
+## $`SB018N.2017-05-08.1.AMS`
+##           Location StationCode Longitude Latitude SampleDate SampleTime MethodCode
+## 1993 Chipps Island      SB018N -121.9099 38.04797 2017-05-08   07:43:00       MWTR
+##      GearConditionCode TowNumber   Volume WaterTemp OrganismCode Count
+## 1993                 1         1 18785.68      17.6          AMS     1
+## 
+## $`SB018M.2017-05-10.1.AMS`
+##          Location StationCode Longitude Latitude SampleDate SampleTime MethodCode GearConditionCode
+## 444 Chipps Island      SB018M -121.9099 38.04598 2017-05-10   07:52:00       MWTR                 1
+##     TowNumber   Volume WaterTemp OrganismCode Count
+## 444         1 15878.25      18.3          AMS     1</code></pre>
+<div class="sourceCode" id="cb44"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb44-1"><a href="data-manipulation.html#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Recombine:</span></span>
+<span id="cb44-2"><a href="data-manipulation.html#cb44-2" aria-hidden="true" tabindex="-1"></a>chipps_data_agg_base <span class="ot">&lt;-</span> <span class="fu">unsplit</span>(<span class="at">value=</span>chipps_data_list, <span class="at">f=</span><span class="fu">names</span>(chipps_data_list))</span></code></pre></div>
+<p><strong>Handle missing values:</strong></p>
+<div class="sourceCode" id="cb45"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb45-1"><a href="data-manipulation.html#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="fu">any</span>(<span class="fu">is.na</span>(chipps_data_agg_base<span class="sc">$</span>WaterTemp))</span></code></pre></div>
+<pre><code>## [1] TRUE</code></pre>
+<table class="table" style="font-size: 13px; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:left;">
+Location
+</th>
+<th style="text-align:left;">
+StationCode
+</th>
+<th style="text-align:right;">
+Longitude
+</th>
+<th style="text-align:right;">
+Latitude
+</th>
+<th style="text-align:left;">
+SampleDate
+</th>
+<th style="text-align:left;">
+SampleTime
+</th>
+<th style="text-align:left;">
+MethodCode
+</th>
+<th style="text-align:right;">
+GearConditionCode
+</th>
+<th style="text-align:right;">
+TowNumber
+</th>
+<th style="text-align:right;">
+Volume
+</th>
+<th style="text-align:right;">
+WaterTemp
+</th>
+<th style="text-align:left;">
+OrganismCode
+</th>
+<th style="text-align:right;">
+Count
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+2503
+</td>
+<td style="text-align:left;">
+Chipps Island
+</td>
+<td style="text-align:left;">
+SB018N
+</td>
+<td style="text-align:right;">
+-121.9099
+</td>
+<td style="text-align:right;">
+38.04797
+</td>
+<td style="text-align:left;">
+2017-05-26
+</td>
+<td style="text-align:left;">
+10:08:00
+</td>
+<td style="text-align:left;">
+MWTR
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+21476.41
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+SPLT
+</td>
+<td style="text-align:right;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+1423
+</td>
+<td style="text-align:left;">
+Chipps Island
+</td>
+<td style="text-align:left;">
+SB018M
+</td>
+<td style="text-align:right;">
+-121.9099
+</td>
+<td style="text-align:right;">
+38.04598
+</td>
+<td style="text-align:left;">
+2017-05-16
+</td>
+<td style="text-align:left;">
+08:48:00
+</td>
+<td style="text-align:left;">
+MWTR
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+22673.23
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+AMS
+</td>
+<td style="text-align:right;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+591
+</td>
+<td style="text-align:left;">
+Chipps Island
+</td>
+<td style="text-align:left;">
+SB018M
+</td>
+<td style="text-align:right;">
+-121.9099
+</td>
+<td style="text-align:right;">
+38.04598
+</td>
+<td style="text-align:left;">
+2017-05-26
+</td>
+<td style="text-align:left;">
+11:47:00
+</td>
+<td style="text-align:left;">
+MWTR
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+22547.40
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+CHN
+</td>
+<td style="text-align:right;">
+12
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+2406
+</td>
+<td style="text-align:left;">
+Chipps Island
+</td>
+<td style="text-align:left;">
+SB018N
+</td>
+<td style="text-align:right;">
+-121.9099
+</td>
+<td style="text-align:right;">
+38.04797
+</td>
+<td style="text-align:left;">
+2017-05-26
+</td>
+<td style="text-align:left;">
+10:57:00
+</td>
+<td style="text-align:left;">
+MWTR
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+20555.20
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+CHN
+</td>
+<td style="text-align:right;">
+10
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+396
+</td>
+<td style="text-align:left;">
+Chipps Island
+</td>
+<td style="text-align:left;">
+SB018M
+</td>
+<td style="text-align:right;">
+-121.9099
+</td>
+<td style="text-align:right;">
+38.04598
+</td>
+<td style="text-align:left;">
+2017-05-16
+</td>
+<td style="text-align:left;">
+08:48:00
+</td>
+<td style="text-align:left;">
+MWTR
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+22673.23
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+CHN
+</td>
+<td style="text-align:right;">
+52
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+907
+</td>
+<td style="text-align:left;">
+Chipps Island
+</td>
+<td style="text-align:left;">
+SB018M
+</td>
+<td style="text-align:right;">
+-121.9099
+</td>
+<td style="text-align:right;">
+38.04598
+</td>
+<td style="text-align:left;">
+2017-05-26
+</td>
+<td style="text-align:left;">
+09:15:00
+</td>
+<td style="text-align:left;">
+MWTR
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+18900.52
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+CHN
+</td>
+<td style="text-align:right;">
+13
+</td>
+</tr>
+</tbody>
+</table>
+<div class="sourceCode" id="cb47"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb47-1"><a href="data-manipulation.html#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Example of how you might want to handle missing values:</span></span>
+<span id="cb47-2"><a href="data-manipulation.html#cb47-2" aria-hidden="true" tabindex="-1"></a>ind_missing <span class="ot">&lt;-</span> <span class="fu">is.na</span>(chipps_data_agg_base<span class="sc">$</span>WaterTemp)</span>
+<span id="cb47-3"><a href="data-manipulation.html#cb47-3" aria-hidden="true" tabindex="-1"></a>chipps_data_agg_base<span class="sc">$</span>WaterTemp[ind_missing] <span class="ot">&lt;-</span> <span class="fu">mean</span>(chipps_data_agg_base<span class="sc">$</span>WaterTemp, </span>
+<span id="cb47-4"><a href="data-manipulation.html#cb47-4" aria-hidden="true" tabindex="-1"></a>                                                    <span class="at">na.rm=</span><span class="cn">TRUE</span>)</span>
+<span id="cb47-5"><a href="data-manipulation.html#cb47-5" aria-hidden="true" tabindex="-1"></a><span class="fu">any</span>(<span class="fu">is.na</span>(chipps_data_agg_base<span class="sc">$</span>WaterTemp))</span></code></pre></div>
+<pre><code>## [1] FALSE</code></pre>
+<p><strong>Sort:</strong></p>
+<div class="sourceCode" id="cb49"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb49-1"><a href="data-manipulation.html#cb49-1" aria-hidden="true" tabindex="-1"></a>index_sorted <span class="ot">&lt;-</span> <span class="fu">order</span>(chipps_data_agg_base<span class="sc">$</span>SampleDate,</span>
+<span id="cb49-2"><a href="data-manipulation.html#cb49-2" aria-hidden="true" tabindex="-1"></a>                      chipps_data_agg_base<span class="sc">$</span>TowNumber,</span>
+<span id="cb49-3"><a href="data-manipulation.html#cb49-3" aria-hidden="true" tabindex="-1"></a>                      chipps_data_agg_base<span class="sc">$</span>OrganismCode)</span>
+<span id="cb49-4"><a href="data-manipulation.html#cb49-4" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(index_sorted)</span></code></pre></div>
+<pre><code>## [1] 421 360 393 237 444 301</code></pre>
+<div class="sourceCode" id="cb51"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb51-1"><a href="data-manipulation.html#cb51-1" aria-hidden="true" tabindex="-1"></a>chipps_data_agg_base <span class="ot">&lt;-</span> chipps_data_agg_base[index_sorted, ]</span></code></pre></div>
+<table class="table" style="font-size: 13px; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+Location
+</th>
+<th style="text-align:left;">
+StationCode
+</th>
+<th style="text-align:right;">
+Longitude
+</th>
+<th style="text-align:right;">
+Latitude
+</th>
+<th style="text-align:left;">
+SampleDate
+</th>
+<th style="text-align:left;">
+SampleTime
+</th>
+<th style="text-align:left;">
+MethodCode
+</th>
+<th style="text-align:right;">
+GearConditionCode
+</th>
+<th style="text-align:right;">
+TowNumber
+</th>
+<th style="text-align:right;">
+Volume
+</th>
+<th style="text-align:right;">
+WaterTemp
+</th>
+<th style="text-align:left;">
+OrganismCode
+</th>
+<th style="text-align:right;">
+Count
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Chipps Island
+</td>
+<td style="text-align:left;">
+SB018M
+</td>
+<td style="text-align:right;">
+-121.9099
+</td>
+<td style="text-align:right;">
+38.04598
+</td>
+<td style="text-align:left;">
+2017-05-01
+</td>
+<td style="text-align:left;">
+07:30:00
+</td>
+<td style="text-align:left;">
+MWTR
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+20985.09
+</td>
+<td style="text-align:right;">
+15.9
+</td>
+<td style="text-align:left;">
+CHN
+</td>
+<td style="text-align:right;">
+22
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Chipps Island
+</td>
+<td style="text-align:left;">
+SB018M
+</td>
+<td style="text-align:right;">
+-121.9099
+</td>
+<td style="text-align:right;">
+38.04598
+</td>
+<td style="text-align:left;">
+2017-05-01
+</td>
+<td style="text-align:left;">
+07:55:00
+</td>
+<td style="text-align:left;">
+MWTR
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+19911.10
+</td>
+<td style="text-align:right;">
+15.8
+</td>
+<td style="text-align:left;">
+CHN
+</td>
+<td style="text-align:right;">
+14
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Chipps Island
+</td>
+<td style="text-align:left;">
+SB018M
+</td>
+<td style="text-align:right;">
+-121.9099
+</td>
+<td style="text-align:right;">
+38.04598
+</td>
+<td style="text-align:left;">
+2017-05-01
+</td>
+<td style="text-align:left;">
+08:20:00
+</td>
+<td style="text-align:left;">
+MWTR
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+19597.54
+</td>
+<td style="text-align:right;">
+16.1
+</td>
+<td style="text-align:left;">
+CHN
+</td>
+<td style="text-align:right;">
+7
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Chipps Island
+</td>
+<td style="text-align:left;">
+SB018M
+</td>
+<td style="text-align:right;">
+-121.9099
+</td>
+<td style="text-align:right;">
+38.04598
+</td>
+<td style="text-align:left;">
+2017-05-01
+</td>
+<td style="text-align:left;">
+08:20:00
+</td>
+<td style="text-align:left;">
+MWTR
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+19597.54
+</td>
+<td style="text-align:right;">
+16.1
+</td>
+<td style="text-align:left;">
+TSS
+</td>
+<td style="text-align:right;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Chipps Island
+</td>
+<td style="text-align:left;">
+SB018M
+</td>
+<td style="text-align:right;">
+-121.9099
+</td>
+<td style="text-align:right;">
+38.04598
+</td>
+<td style="text-align:left;">
+2017-05-01
+</td>
+<td style="text-align:left;">
+08:48:00
+</td>
+<td style="text-align:left;">
+MWTR
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+20492.28
+</td>
+<td style="text-align:right;">
+16.0
+</td>
+<td style="text-align:left;">
+AMS
+</td>
+<td style="text-align:right;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Chipps Island
+</td>
+<td style="text-align:left;">
+SB018M
+</td>
+<td style="text-align:right;">
+-121.9099
+</td>
+<td style="text-align:right;">
+38.04598
+</td>
+<td style="text-align:left;">
+2017-05-01
+</td>
+<td style="text-align:left;">
+08:48:00
+</td>
+<td style="text-align:left;">
+MWTR
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+20492.28
+</td>
+<td style="text-align:right;">
+16.0
+</td>
+<td style="text-align:left;">
+CHN
+</td>
+<td style="text-align:right;">
+5
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Save data:</strong></p>
+<div class="sourceCode" id="cb52"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb52-1"><a href="data-manipulation.html#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="fu">write.csv</span>(chipps_data_agg_base, <span class="fu">file.path</span>(root,<span class="st">&quot;data&quot;</span>,<span class="st">&quot;chipps_data_base.csv&quot;</span>),</span>
+<span id="cb52-2"><a href="data-manipulation.html#cb52-2" aria-hidden="true" tabindex="-1"></a>          <span class="at">row.names=</span><span class="cn">FALSE</span>)</span></code></pre></div>
+</div>
+<div id="tidyverse" class="section level3" number="3.1.2">
+<h3><span class="header-section-number">3.1.2</span> Tidyverse</h3>
+<p>A lot of tidyverse functions are designed to be used with pipes. Pipes are functions that
+facilitate the passing of data between functions, e.g., the dataset returned by one
+function is used as input to the next function. Tidyverse packages tend to depend on the magrittr package, which provides the %&gt;% pipe. With the release of R version 4.1.0, a
+pipe, |&gt;, has been added to base R. Neither pipe looks like a standard function, but
+the syntax is relatively simple and best explained through example.</p>
+<p><strong>Read in data:</strong></p>
+<div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb53-1"><a href="data-manipulation.html#cb53-1" aria-hidden="true" tabindex="-1"></a>trawl_data <span class="ot">&lt;-</span> readr<span class="sc">::</span><span class="fu">read_csv</span>(trawl_file, <span class="at">show_col_types=</span><span class="cn">FALSE</span>)</span>
+<span id="cb53-2"><a href="data-manipulation.html#cb53-2" aria-hidden="true" tabindex="-1"></a>station_data <span class="ot">&lt;-</span> readr<span class="sc">::</span><span class="fu">read_csv</span>(station_file, <span class="at">show_col_types=</span><span class="cn">FALSE</span>)</span></code></pre></div>
+<p><strong>Everything else:</strong></p>
+<div class="sourceCode" id="cb54"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb54-1"><a href="data-manipulation.html#cb54-1" aria-hidden="true" tabindex="-1"></a>chipps_data_agg_tidy <span class="ot">&lt;-</span> trawl_data <span class="sc">%&gt;%</span></span>
+<span id="cb54-2"><a href="data-manipulation.html#cb54-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Reformat and add new fields:</span></span>
+<span id="cb54-3"><a href="data-manipulation.html#cb54-3" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">SampleDate=</span><span class="fu">as.Date</span>(SampleDate),  </span>
+<span id="cb54-4"><a href="data-manipulation.html#cb54-4" aria-hidden="true" tabindex="-1"></a>                <span class="at">Year=</span>lubridate<span class="sc">::</span><span class="fu">year</span>(SampleDate),</span>
+<span id="cb54-5"><a href="data-manipulation.html#cb54-5" aria-hidden="true" tabindex="-1"></a>                <span class="at">Month=</span>lubridate<span class="sc">::</span><span class="fu">month</span>(SampleDate)) <span class="sc">%&gt;%</span></span>
+<span id="cb54-6"><a href="data-manipulation.html#cb54-6" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Subset/filter:</span></span>
+<span id="cb54-7"><a href="data-manipulation.html#cb54-7" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(Year <span class="sc">==</span> <span class="dv">2017</span> <span class="sc">&amp;</span> Month <span class="sc">==</span> <span class="dv">5</span> <span class="sc">&amp;</span> Location <span class="sc">==</span> <span class="st">&quot;Chipps Island&quot;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb54-8"><a href="data-manipulation.html#cb54-8" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Join:</span></span>
+<span id="cb54-9"><a href="data-manipulation.html#cb54-9" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">left_join</span>(station_data, <span class="at">by=</span><span class="fu">c</span>(<span class="st">&quot;MethodCode&quot;</span>,<span class="st">&quot;Location&quot;</span>,<span class="st">&quot;StationCode&quot;</span>)) <span class="sc">%&gt;%</span>  </span>
+<span id="cb54-10"><a href="data-manipulation.html#cb54-10" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Select fields:</span></span>
+<span id="cb54-11"><a href="data-manipulation.html#cb54-11" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(Location, StationCode, Longitude, Latitude, SampleDate, SampleTime,</span>
+<span id="cb54-12"><a href="data-manipulation.html#cb54-12" aria-hidden="true" tabindex="-1"></a>                MethodCode, GearConditionCode, TowNumber, Volume, WaterTemp, </span>
+<span id="cb54-13"><a href="data-manipulation.html#cb54-13" aria-hidden="true" tabindex="-1"></a>                OrganismCode, ForkLength, Count) <span class="sc">%&gt;%</span></span>
+<span id="cb54-14"><a href="data-manipulation.html#cb54-14" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Group and summarize/aggregate:</span></span>
+<span id="cb54-15"><a href="data-manipulation.html#cb54-15" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">group_by</span>(Location, StationCode, Longitude, Latitude, SampleDate, SampleTime, </span>
+<span id="cb54-16"><a href="data-manipulation.html#cb54-16" aria-hidden="true" tabindex="-1"></a>                  MethodCode, GearConditionCode, TowNumber, Volume, WaterTemp, </span>
+<span id="cb54-17"><a href="data-manipulation.html#cb54-17" aria-hidden="true" tabindex="-1"></a>                  OrganismCode) <span class="sc">%&gt;%</span></span>
+<span id="cb54-18"><a href="data-manipulation.html#cb54-18" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">summarize</span>(<span class="at">Count=</span><span class="fu">sum</span>(Count), <span class="at">.groups=</span><span class="st">&quot;drop&quot;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb54-19"><a href="data-manipulation.html#cb54-19" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Handle missing values:</span></span>
+<span id="cb54-20"><a href="data-manipulation.html#cb54-20" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">WaterTemp=</span>tidyr<span class="sc">::</span><span class="fu">replace_na</span>(WaterTemp, <span class="fu">mean</span>(WaterTemp, <span class="at">na.rm=</span><span class="cn">TRUE</span>))) <span class="sc">%&gt;%</span></span>
+<span id="cb54-21"><a href="data-manipulation.html#cb54-21" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Sort:</span></span>
+<span id="cb54-22"><a href="data-manipulation.html#cb54-22" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">arrange</span>(SampleDate, TowNumber, OrganismCode) <span class="sc">%&gt;%</span>  </span>
+<span id="cb54-23"><a href="data-manipulation.html#cb54-23" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Save data:</span></span>
+<span id="cb54-24"><a href="data-manipulation.html#cb54-24" aria-hidden="true" tabindex="-1"></a>  readr<span class="sc">::</span><span class="fu">write_csv</span>(<span class="at">file=</span><span class="fu">file.path</span>(root,<span class="st">&quot;data&quot;</span>,<span class="st">&quot;chipps_data_tidy.csv&quot;</span>))</span></code></pre></div>
+</div>
+<div id="comparing-the-base-and-tidy-datasets" class="section level3" number="3.1.3">
+<h3><span class="header-section-number">3.1.3</span> Comparing the base and tidy datasets</h3>
+<p>The base and tidy datasets should be identical except for some minor formatting
+differences. The code below reconciles these differences and uses the identical()
+function to show that they are the same.</p>
+<div class="sourceCode" id="cb55"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb55-1"><a href="data-manipulation.html#cb55-1" aria-hidden="true" tabindex="-1"></a>chipps_base <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="fu">file.path</span>(root,<span class="st">&quot;data&quot;</span>,<span class="st">&quot;chipps_data_base.csv&quot;</span>))</span>
+<span id="cb55-2"><a href="data-manipulation.html#cb55-2" aria-hidden="true" tabindex="-1"></a>chipps_tidy <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="fu">file.path</span>(root,<span class="st">&quot;data&quot;</span>,<span class="st">&quot;chipps_data_tidy.csv&quot;</span>))             </span>
+<span id="cb55-3"><a href="data-manipulation.html#cb55-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb55-4"><a href="data-manipulation.html#cb55-4" aria-hidden="true" tabindex="-1"></a><span class="fu">identical</span>(chipps_base, chipps_tidy)</span></code></pre></div>
+<pre><code>## [1] FALSE</code></pre>
+<div class="sourceCode" id="cb57"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb57-1"><a href="data-manipulation.html#cb57-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(chipps_base)</span></code></pre></div>
+<pre><code>## [1] 451  13</code></pre>
+<div class="sourceCode" id="cb59"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb59-1"><a href="data-manipulation.html#cb59-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(chipps_tidy)</span></code></pre></div>
+<pre><code>## [1] 451  13</code></pre>
+<div class="sourceCode" id="cb61"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb61-1"><a href="data-manipulation.html#cb61-1" aria-hidden="true" tabindex="-1"></a><span class="fu">identical</span>(<span class="fu">names</span>(chipps_base), <span class="fu">names</span>(chipps_tidy))</span></code></pre></div>
+<pre><code>## [1] TRUE</code></pre>
+<div class="sourceCode" id="cb63"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb63-1"><a href="data-manipulation.html#cb63-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(col_name <span class="cf">in</span> <span class="fu">names</span>(chipps_base)) {</span>
+<span id="cb63-2"><a href="data-manipulation.html#cb63-2" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span>(<span class="sc">!</span><span class="fu">identical</span>(chipps_base[ ,col_name], chipps_tidy[ ,col_name])) {</span>
+<span id="cb63-3"><a href="data-manipulation.html#cb63-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">print</span>(col_name)</span>
+<span id="cb63-4"><a href="data-manipulation.html#cb63-4" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb63-5"><a href="data-manipulation.html#cb63-5" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<pre><code>## [1] &quot;WaterTemp&quot;</code></pre>
+<div class="sourceCode" id="cb65"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb65-1"><a href="data-manipulation.html#cb65-1" aria-hidden="true" tabindex="-1"></a><span class="co"># WaterTemp&#39;s are the same up to some machine level precision:</span></span>
+<span id="cb65-2"><a href="data-manipulation.html#cb65-2" aria-hidden="true" tabindex="-1"></a><span class="fu">unique</span>(chipps_base<span class="sc">$</span>WaterTemp <span class="sc">-</span> chipps_tidy<span class="sc">$</span>WaterTemp)</span></code></pre></div>
+<pre><code>## [1]  0.000000e+00 -3.552714e-14</code></pre>
+<div class="sourceCode" id="cb67"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb67-1"><a href="data-manipulation.html#cb67-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Round WaterTemp&#39;s to one decimal place for comparison purposes:</span></span>
+<span id="cb67-2"><a href="data-manipulation.html#cb67-2" aria-hidden="true" tabindex="-1"></a>chipps_base<span class="sc">$</span>WaterTemp <span class="ot">&lt;-</span> <span class="fu">round</span>(chipps_base<span class="sc">$</span>WaterTemp, <span class="dv">1</span>)</span>
+<span id="cb67-3"><a href="data-manipulation.html#cb67-3" aria-hidden="true" tabindex="-1"></a>chipps_tidy<span class="sc">$</span>WaterTemp <span class="ot">&lt;-</span> <span class="fu">round</span>(chipps_tidy<span class="sc">$</span>WaterTemp, <span class="dv">1</span>)</span>
+<span id="cb67-4"><a href="data-manipulation.html#cb67-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb67-5"><a href="data-manipulation.html#cb67-5" aria-hidden="true" tabindex="-1"></a><span class="fu">identical</span>(chipps_base, chipps_tidy)</span></code></pre></div>
+<pre><code>## [1] TRUE</code></pre>
+</div>
+</div>
+<div id="long-and-wide-data" class="section level2" number="3.2">
+<h2><span class="header-section-number">3.2</span> Long and wide data</h2>
+<p><em>Long</em> and <em>wide</em> refer to different ways to structure a dataset. Different
+applications call for different structures, so it’s useful to understand what these
+terms mean and how to convert a dataset from one type to the other. Generally, long data
+will have more rows and fewer columns while wide data will have fewer rows and more
+columns.</p>
+<ol style="list-style-type: decimal">
+<li>Here’s one way to think about it:</li>
+</ol>
+<ul>
+<li>long data: all of the column names are <em>variables</em>, not values</li>
+<li>wide data: some of the column names are <em>values</em> of variables</li>
+</ul>
+<ol start="2" style="list-style-type: decimal">
+<li>Here’s another way to think about it:</li>
+</ol>
+<ul>
+<li>long data: an observation is spread out across multiple rows</li>
+<li>wide data: an observation is spread out across multiple columns</li>
+</ul>
+<p><strong>Example:</strong></p>
+<p>The following is an example of converting some Chipps trawl data from long to wide format.
+Here is an overview of what’s going on according to the two perspectives described above:</p>
+<ol style="list-style-type: decimal">
+<li><p>In <code>long_data</code>, all of the column names (StationCode, SampleDat,e etc.) are variables,
+or general concepts. In <code>wide_data</code>, the values from the OrganismCode variable are now
+column names with count as the corresponding value.</p></li>
+<li><p>Define an observation as a single tow. In <code>long_data</code>, different organism codes and counts from a single tow are spread out across rows (and other values such as date are repeated as necessary). In <code>wide_data</code> there is one row per tow, and tow-specific organism codes and
+counts data are spread out across multiple columns.</p></li>
+</ol>
+<p><strong>Long version:</strong></p>
+<div class="sourceCode" id="cb69"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb69-1"><a href="data-manipulation.html#cb69-1" aria-hidden="true" tabindex="-1"></a>long_data <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="fu">file.path</span>(root,<span class="st">&quot;data&quot;</span>,<span class="st">&quot;chipps_data_base.csv&quot;</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb69-2"><a href="data-manipulation.html#cb69-2" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(<span class="sc">-</span><span class="fu">c</span>(Location, SampleTime, MethodCode, GearConditionCode, WaterTemp))</span></code></pre></div>
+<table class="table" style="font-size: 13px; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+StationCode
+</th>
+<th style="text-align:right;">
+Longitude
+</th>
+<th style="text-align:right;">
+Latitude
+</th>
+<th style="text-align:left;">
+SampleDate
+</th>
+<th style="text-align:right;">
+TowNumber
+</th>
+<th style="text-align:right;">
+Volume
+</th>
+<th style="text-align:left;">
+OrganismCode
+</th>
+<th style="text-align:right;">
+Count
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+SB018M
+</td>
+<td style="text-align:right;">
+-121.9099
+</td>
+<td style="text-align:right;">
+38.04598
+</td>
+<td style="text-align:left;">
+2017-05-01
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+20985.09
+</td>
+<td style="text-align:left;">
+CHN
+</td>
+<td style="text-align:right;">
+22
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SB018M
+</td>
+<td style="text-align:right;">
+-121.9099
+</td>
+<td style="text-align:right;">
+38.04598
+</td>
+<td style="text-align:left;">
+2017-05-01
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+19911.10
+</td>
+<td style="text-align:left;">
+CHN
+</td>
+<td style="text-align:right;">
+14
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SB018M
+</td>
+<td style="text-align:right;">
+-121.9099
+</td>
+<td style="text-align:right;">
+38.04598
+</td>
+<td style="text-align:left;">
+2017-05-01
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+19597.54
+</td>
+<td style="text-align:left;">
+CHN
+</td>
+<td style="text-align:right;">
+7
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SB018M
+</td>
+<td style="text-align:right;">
+-121.9099
+</td>
+<td style="text-align:right;">
+38.04598
+</td>
+<td style="text-align:left;">
+2017-05-01
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+19597.54
+</td>
+<td style="text-align:left;">
+TSS
+</td>
+<td style="text-align:right;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SB018M
+</td>
+<td style="text-align:right;">
+-121.9099
+</td>
+<td style="text-align:right;">
+38.04598
+</td>
+<td style="text-align:left;">
+2017-05-01
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+20492.28
+</td>
+<td style="text-align:left;">
+AMS
+</td>
+<td style="text-align:right;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SB018M
+</td>
+<td style="text-align:right;">
+-121.9099
+</td>
+<td style="text-align:right;">
+38.04598
+</td>
+<td style="text-align:left;">
+2017-05-01
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+20492.28
+</td>
+<td style="text-align:left;">
+CHN
+</td>
+<td style="text-align:right;">
+5
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Wide version:</strong></p>
+<div class="sourceCode" id="cb70"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb70-1"><a href="data-manipulation.html#cb70-1" aria-hidden="true" tabindex="-1"></a>wide_data <span class="ot">&lt;-</span> tidyr<span class="sc">::</span><span class="fu">pivot_wider</span>(<span class="at">data=</span>long_data, </span>
+<span id="cb70-2"><a href="data-manipulation.html#cb70-2" aria-hidden="true" tabindex="-1"></a>                                <span class="at">names_from=</span>OrganismCode, </span>
+<span id="cb70-3"><a href="data-manipulation.html#cb70-3" aria-hidden="true" tabindex="-1"></a>                                <span class="at">values_from=</span>Count, </span>
+<span id="cb70-4"><a href="data-manipulation.html#cb70-4" aria-hidden="true" tabindex="-1"></a>                                <span class="at">values_fill=</span><span class="dv">0</span>)</span></code></pre></div>
+<table class="table" style="font-size: 13px; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+StationCode
+</th>
+<th style="text-align:right;">
+Longitude
+</th>
+<th style="text-align:right;">
+Latitude
+</th>
+<th style="text-align:left;">
+SampleDate
+</th>
+<th style="text-align:right;">
+TowNumber
+</th>
+<th style="text-align:right;">
+Volume
+</th>
+<th style="text-align:right;">
+CHN
+</th>
+<th style="text-align:right;">
+TSS
+</th>
+<th style="text-align:right;">
+AMS
+</th>
+<th style="text-align:right;">
+RBT
+</th>
+<th style="text-align:right;">
+SPLT
+</th>
+<th style="text-align:right;">
+STB
+</th>
+<th style="text-align:right;">
+TFS
+</th>
+<th style="text-align:right;">
+SHM
+</th>
+<th style="text-align:right;">
+WHC
+</th>
+<th style="text-align:right;">
+BGS
+</th>
+<th style="text-align:right;">
+SAPM
+</th>
+<th style="text-align:right;">
+BKS
+</th>
+<th style="text-align:right;">
+PL
+</th>
+<th style="text-align:right;">
+NOFISH
+</th>
+<th style="text-align:right;">
+GSN
+</th>
+<th style="text-align:right;">
+TP
+</th>
+<th style="text-align:right;">
+CHC
+</th>
+<th style="text-align:right;">
+DSM
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+SB018M
+</td>
+<td style="text-align:right;">
+-121.9099
+</td>
+<td style="text-align:right;">
+38.04598
+</td>
+<td style="text-align:left;">
+2017-05-01
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+20985.09
+</td>
+<td style="text-align:right;">
+22
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SB018M
+</td>
+<td style="text-align:right;">
+-121.9099
+</td>
+<td style="text-align:right;">
+38.04598
+</td>
+<td style="text-align:left;">
+2017-05-01
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+19911.10
+</td>
+<td style="text-align:right;">
+14
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SB018M
+</td>
+<td style="text-align:right;">
+-121.9099
+</td>
+<td style="text-align:right;">
+38.04598
+</td>
+<td style="text-align:left;">
+2017-05-01
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+19597.54
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SB018M
+</td>
+<td style="text-align:right;">
+-121.9099
+</td>
+<td style="text-align:right;">
+38.04598
+</td>
+<td style="text-align:left;">
+2017-05-01
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+20492.28
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SB018S
+</td>
+<td style="text-align:right;">
+-121.9099
+</td>
+<td style="text-align:right;">
+38.04283
+</td>
+<td style="text-align:left;">
+2017-05-01
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+19902.11
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SB018S
+</td>
+<td style="text-align:right;">
+-121.9099
+</td>
+<td style="text-align:right;">
+38.04283
+</td>
+<td style="text-align:left;">
+2017-05-01
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+20140.28
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="review.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="data-visualization.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
