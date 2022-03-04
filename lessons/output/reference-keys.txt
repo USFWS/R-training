@@ -1,0 +1,13 @@
+overview
+review
+data-types
+data-structures
+functions
+data-manipulation
+common-operations
+base-r
+tidyverse
+comparing-the-base-and-tidy-datasets
+long-and-wide-data
+data-visualization
+exercises

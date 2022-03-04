@@ -1,0 +1,12 @@
+--- 
+title: "R Course: Data Manipulation and Visualization"
+date: "`r format(Sys.Date(), '%B %d, %Y')`"
+output:
+  bookdown::gitbook: default
+documentclass: book
+---
+
+# Overview
+
+...
+

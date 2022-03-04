@@ -1,0 +1,22 @@
+# Data Visualization
+
+```{r include=FALSE}
+library(knitr)
+library(kableExtra)
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+
+knitr::opts_chunk$set(echo=TRUE)
+```
+
+
+Time series (calculate and plot CPUE over time)
+
+Histogram of forklengths
+
+
+
+
+
+

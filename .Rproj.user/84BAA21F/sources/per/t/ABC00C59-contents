@@ -1,0 +1,110 @@
+# Review
+
+```{r include=FALSE}
+library(knitr)
+library(dplyr)
+library(tidyr)
+
+knitr::opts_chunk$set(echo=TRUE)
+```
+
+
+## Data types
+```{r}
+# numeric:
+x <- 5
+```
+
+```{r}
+# string or character:
+y <- "CHN"
+```
+
+```{r}
+# Boolean:
+w <- TRUE
+!w
+```
+
+```{r}
+# factor (kind of like a hybrid of numeric and string):
+my_factor <- factor(x=c("a","b","c"), 
+                    levels=c("a","b","c"), 
+                    ordered=TRUE)
+my_factor
+```
+
+
+## Data structures
+
+A **vector** is a collection of like-objects:
+```{r}
+# a vector of strings:
+x <- c("a","b","c")
+
+# a vector of numbers:
+y <- c(1,2,3)
+```
+
+A **data frame** is like a spreadsheet, e.g., it has rows and columns:
+```{r}
+my_df <- data.frame("field_1"=1:3, "field_2"=4:6, "field_3"=7:9)
+my_df
+```
+
+A **list** is similar to a vector except the objects don't have to be of the same type:
+```{r}
+my_list <- list(1, "a", c(5:9), my_df)
+my_list
+```
+
+## Functions
+
+A function is a set of code that has a name and zero or more parameters You run the 
+function using its name and you pass in objects (e.g., numbers, strings, data frames) 
+as arguments. Note that some parameters are required and some are optional meaning they 
+have default values (if you don't set them explicitly, the default values are used). The 
+help page for a given function will indicate which parameters are required and which 
+have default values. If a function has parameter(s), arguments can generally be passed in according to the parameter name(s) and/or the argument positions. 
+
+**Example**
+
+The mean() function returns the arithmetic mean of a vector of numbers. It has three 
+parameters called `x`, `trim`, and `na.rm` (plus an option for additional parameters that we 
+don't need here). The parameter `x` takes the vector of numbers and is required, `trim` 
+controls the number of observations that are trimmed from each end of `x` before the mean is 
+computed (if you want that behavior) and has a default value of 0, and `na.rm` is a Boolean 
+indicating whether any `r NA` values should be removed before the mean is computed and has 
+a default of `r FALSE`.
+
+If we're only using the first parameter, we can choose whether or not to use the name x:
+```{r}
+mean(x=1:3)
+mean(1:3)
+```
+
+If you want to set all three parameters, you can omit names if they're in the original 
+order:
+```{r}
+mean(x=c(0,NA,1,2,3,4), trim=1, na.rm=TRUE)
+mean(c(0,NA,1,2,3,4), 1, TRUE)
+
+# This would produce an error because mean() expects the first argument to be a numeric vector:
+# mean(TRUE, c(0,NA,1,2,3,4), 1)
+```
+
+If you want to go out of order or you want to set some and use default values for others, you'll usually want to include parameter names:
+```{r}
+mean(na.rm=TRUE, x=c(0,NA,1,2,3,4), trim=1)
+mean(x=c(0,NA,1,2,3,4), na.rm=TRUE)
+```
+
+When in doubt, use parameter names.
+
+The material presented here uses functions from external packages. When using these 
+functions we use the notation `libraryName::functionName()`, e.g., `dplyr::select()`, so 
+it's clear where the function is coming from. 
+
+
+
+

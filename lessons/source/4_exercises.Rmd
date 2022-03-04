@@ -1,0 +1,22 @@
+# Exercises
+
+```{r include=FALSE}
+library(knitr)
+library(dplyr)
+library(tidyr)
+
+knitr::opts_chunk$set(echo=TRUE)
+```
+
+
+-calculating work stats
+
+-still need to do the extra query
+
+-how to determine number of (unique) tows?
+- ... can't just look at number of rows because tows may be repeated depending on catches (overestimate) ... calls for wide formatting ... 
+
+
+
+regular expressions
+

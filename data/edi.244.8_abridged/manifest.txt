@@ -1,0 +1,10 @@
+Manifest file for edi.244.8-4c9184f37cff01bcdc32dc486ec36961.zip created on Tue Nov 09 20:16:28 MST 2021
+1976-2001_DJFMP_trawl_fish_and_water_quality_data.csv (183147168 bytes)
+2002-2021_DJFMP_trawl_fish_and_water_quality_data.csv (186143514 bytes)
+1976-2021_DJFMP_beach_seine_fish_and_water_quality_data.csv (209279855 bytes)
+DJFMP_Fish_Taxonomy.csv (22021 bytes)
+DJFMP_Site_Locations.csv (5409 bytes)
+ChangeLog.csv (1288 bytes)
+edi.244.8.xml (231559 bytes)
+edi.244.8.txt (134479 bytes)
+edi.244.8.report.xml (128879 bytes)

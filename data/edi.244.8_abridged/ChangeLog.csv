@@ -1,0 +1,23 @@
+﻿Date,AttributeAdded,AttributeRemoved,Comments
+2021-06-09,ArchivalID,NA,Data update
+2021-06-09,GeneticID,NA,Data update
+2021-06-09,Probability1,NA,Data update
+2021-06-09,GeneticID2,NA,Data update
+2021-06-09,Probability2,NA,Data update
+2021-06-09,SexGeneID,NA,Data update
+2021-06-09,Ots28,NA,Data update
+2021-06-09,Lab,NA,Data update
+2021-06-09,GeneticTest,NA,Data update
+2021-06-09,Model,NA,Data update
+2021-11-04,Lattitude,Latitude_location,Data standardization across programs
+2021-11-04,Longitude,Longitude_location,Data standardization across programs
+2021-11-04,FlowmeterStart,StartMeter,Data standardization across programs
+2021-11-04,FlowmeterEnd,EndMeter,Data standardization across programs
+2021-11-04,FlowmeterDifference,TotalMeter,Data standardization across programs
+2021-11-04,SamplingDirection,TowDirectionCode,Data standardization across programs
+2021-11-04,FlowDebris,flowDebris,Data standardization across programs
+2021-11-04,WaterTemp,WaterTemperature,Data standardization across programs
+2021-11-04,SpecificConductance,Conductivity,Data standardization across programs
+2021-11-04,Expression,Maturation,Data standardization across programs
+2021-11-04,GeneticModel,Model,Data standardization across programs
+2021-11-04,IEPFishCode,NA,Data update

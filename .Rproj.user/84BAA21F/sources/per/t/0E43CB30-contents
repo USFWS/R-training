@@ -1,0 +1,330 @@
+# Data Manipulation
+
+```{r include=FALSE}
+library(knitr)
+library(kableExtra)
+library(dplyr)
+library(tidyr)
+library(readr)
+library(lubridate)
+
+knitr::opts_chunk$set(echo=TRUE)
+```
+
+There are multiple ways to do almost anything in R. Here we cover two groups of functions 
+that can be used for data manipulation. The first one is [base R](https://stat.ethz.ch/R-manual/R-devel/library/base/html/00Index.html), which describes functions that are built in to R. The second is the [Tidyverse](https://www.tidyverse.org/), which describes a suite of external packages that help streamline these operations. Within 
+the tidyverse, we're going to focus on the dplyr, tidyr, readr, and ggplot2 libraries. Both approaches are useful and prevalent. Having some familiarity with both will allow you to 
+decide when you prefer and will make it easier to collaborate with other researchers. 
+
+In this chapter we present common data manipulation operations by example using DJFMP trawl data obtained from the [Environmental Data Initiative](https://doi.org/10.6073/pasta/8dfe5eac4ecf157b7b91ced772aa214a). The 
+goal is to produce a dataset that contains total catch by species (across all fork 
+lengths) for each tow at Chipps Island during May of 2017, and to include site coordinates. 
+We carry out the process using only base R functions, then repeat the process using 
+functions from the tidyverse packages dplyr, tidyr, and readr, as well as the lubridate package. 
+
+You'll notice that the tidyverse approach to generating the desired dataset is more 
+streamlined and compact than the base R approach. At the same time, base R functions can 
+allow for a lot of flexibility and are less likely to change than tidyverse functions, 
+which are frequently under development these days.
+
+We also introduce the concepts of long data and wide data, which will be important in 
+later chapters.
+
+## Common operations
+
+This example uses the following operations:
+
+* read in data from a file
+* reformat existing fields and add new fields
+* subset/filter
+* join different datasets together
+* select fields to keep
+* group and summarize/aggregate
+* handle missing values
+* sort data according to specific fields
+* write data to a file
+
+### Base R
+
+**Read in data:**
+```{r}
+trawl_file <- file.path(root,"data","edi.244.8_abridged",
+  "2017-2021_DJFMP_chipps_trawl_fish_and_water_quality_data.csv")
+station_file <- file.path(root,"data","edi.244.8_abridged","DJFMP_Site_Locations.csv")
+
+trawl_data <- read.csv(trawl_file, stringsAsFactors=FALSE)
+station_data <- read.csv(station_file, stringsAsFactors=FALSE)
+```
+
+`trawl_data`:
+```{r, echo=FALSE}
+knitr::kable(head(trawl_data)) %>%
+  kableExtra::kable_styling(font_size=13)
+```
+
+`station_data`:
+```{r, echo=FALSE}
+knitr::kable(head(station_data)) %>%
+  kableExtra::kable_styling(font_size=13)
+```
+
+**Reformat and add new fields:**
+```{r}
+trawl_data$SampleDate <- as.Date(trawl_data$SampleDate)
+trawl_data$Year <- as.numeric(format(trawl_data$SampleDate, "%Y"))
+trawl_data$Month <- as.numeric(format(trawl_data$SampleDate, "%m"))
+```
+
+**Subet/filter:**
+```{r}
+unique(trawl_data$Location)
+chipps_data <- subset(trawl_data, Year == 2017 & Month == 5 & Location == "Chipps Island")
+```
+
+**Join:**
+```{r}
+chipps_data <- merge(x=chipps_data,
+                     y=station_data,
+                     by=c("MethodCode","Location","StationCode"),
+                     all.x=TRUE)
+```
+
+```{r, echo=FALSE}
+knitr::kable(head(chipps_data)) %>%
+  kableExtra::kable_styling(font_size=13)
+```
+
+**Select fields:**
+```{r}
+chipps_data <- chipps_data[ ,c("Location","StationCode","Longitude","Latitude",
+                               "SampleDate","SampleTime","MethodCode","GearConditionCode",
+                               "TowNumber","Volume","WaterTemp","OrganismCode",
+                               "ForkLength","Count")]
+```
+
+**Group and summarize/aggregate:**
+```{r}
+# Do a little bit of checking:
+unique(chipps_data$Location)
+unique(chipps_data$StationCode)
+unique(chipps_data$MethodCode)
+unique(chipps_data$GearConditionCode)
+```
+
+```{r, echo=FALSE}
+row.names(chipps_data) <- NULL
+```
+
+```{r}
+# Split:
+chipps_data_split <- split(x=chipps_data, 
+                           f= ~ StationCode + SampleDate + TowNumber + OrganismCode, 
+                           drop=TRUE)
+chipps_data_split[1:3]
+```
+
+```{r}
+# Calculate total counts:
+chipps_data_list <- lapply(chipps_data_split, function(x) {
+  # These checks aren't strictly necessary, but it can be 
+  # worthwhile to check that the data are as expected:
+  stopifnot(length(unique(x$Location)) == 1)
+  stopifnot(length(unique(x$SampleTime)) == 1)
+  stopifnot(length(unique(x$MethodCode)) == 1)
+  stopifnot(length(unique(x$GearConditionCode)) == 1)
+  stopifnot(length(unique(x$Volume)) == 1)
+  stopifnot(length(unique(x$WaterTemp)) == 1)
+  
+  # Keep one row per tow:
+  ret <- x[1, ]
+  
+  # Remove the ForkLength field:
+  ret$ForkLength <- NULL
+  
+  # Sum over the counts-by-length:
+  ret$Count <- sum(x$Count)
+  return(ret)
+})
+
+chipps_data_list[1:3]
+```
+
+```{r}
+# Recombine:
+chipps_data_agg_base <- unsplit(value=chipps_data_list, f=names(chipps_data_list))
+```
+
+**Handle missing values:**
+```{r}
+any(is.na(chipps_data_agg_base$WaterTemp))
+```
+
+```{r, echo=FALSE}
+knitr::kable(head(subset(chipps_data_agg_base, is.na(WaterTemp)))) %>%
+  kableExtra::kable_styling(font_size=13)
+```
+
+```{r}
+# Example of how you might want to handle missing values:
+ind_missing <- is.na(chipps_data_agg_base$WaterTemp)
+chipps_data_agg_base$WaterTemp[ind_missing] <- mean(chipps_data_agg_base$WaterTemp, 
+                                                    na.rm=TRUE)
+any(is.na(chipps_data_agg_base$WaterTemp))
+```
+
+**Sort:**
+```{r}
+index_sorted <- order(chipps_data_agg_base$SampleDate,
+                      chipps_data_agg_base$TowNumber,
+                      chipps_data_agg_base$OrganismCode)
+head(index_sorted)
+```
+
+```{r}
+chipps_data_agg_base <- chipps_data_agg_base[index_sorted, ]
+```
+
+```{r, echo=FALSE}
+row.names(chipps_data_agg_base) <- NULL
+knitr::kable(head(chipps_data_agg_base)) %>%
+  kableExtra::kable_styling(font_size=13)
+```
+
+**Save data:**
+```{r}
+write.csv(chipps_data_agg_base, file.path(root,"data","chipps_data_base.csv"),
+          row.names=FALSE)
+```
+
+
+### Tidyverse
+
+A lot of tidyverse functions are designed to be used with pipes. Pipes are functions that
+facilitate the passing of data between functions, e.g., the dataset returned by one 
+function is used as input to the next function. Tidyverse packages tend to depend on the magrittr package, which provides the %>% pipe. With the release of R version 4.1.0, a 
+pipe, |>, has been added to base R. Neither pipe looks like a standard function, but 
+the syntax is relatively simple and best explained through example.
+
+**Read in data:**
+```{r}
+trawl_data <- readr::read_csv(trawl_file, show_col_types=FALSE)
+station_data <- readr::read_csv(station_file, show_col_types=FALSE)
+```
+
+**Everything else:**
+```{r}
+chipps_data_agg_tidy <- trawl_data %>%
+  # Reformat and add new fields:
+  dplyr::mutate(SampleDate=as.Date(SampleDate),  
+                Year=lubridate::year(SampleDate),
+                Month=lubridate::month(SampleDate)) %>%
+  # Subset/filter:
+  dplyr::filter(Year == 2017 & Month == 5 & Location == "Chipps Island") %>%
+  # Join:
+  dplyr::left_join(station_data, by=c("MethodCode","Location","StationCode")) %>%  
+  # Select fields:
+  dplyr::select(Location, StationCode, Longitude, Latitude, SampleDate, SampleTime,
+                MethodCode, GearConditionCode, TowNumber, Volume, WaterTemp, 
+                OrganismCode, ForkLength, Count) %>%
+  # Group and summarize/aggregate:
+  dplyr::group_by(Location, StationCode, Longitude, Latitude, SampleDate, SampleTime, 
+                  MethodCode, GearConditionCode, TowNumber, Volume, WaterTemp, 
+                  OrganismCode) %>%
+  dplyr::summarize(Count=sum(Count), .groups="drop") %>%
+  # Handle missing values:
+  dplyr::mutate(WaterTemp=tidyr::replace_na(WaterTemp, mean(WaterTemp, na.rm=TRUE))) %>%
+  # Sort:
+  dplyr::arrange(SampleDate, TowNumber, OrganismCode) %>%  
+  # Save data:
+  readr::write_csv(file=file.path(root,"data","chipps_data_tidy.csv"))
+```
+
+
+### Comparing the base and tidy datasets
+
+The base and tidy datasets should be identical except for some minor formatting 
+differences. The code below reconciles these differences and uses the identical() 
+function to show that they are the same. 
+
+```{r}
+chipps_base <- read.csv(file.path(root,"data","chipps_data_base.csv"))
+chipps_tidy <- read.csv(file.path(root,"data","chipps_data_tidy.csv"))             
+
+identical(chipps_base, chipps_tidy)
+
+dim(chipps_base)
+dim(chipps_tidy)
+
+identical(names(chipps_base), names(chipps_tidy))
+
+for(col_name in names(chipps_base)) {
+  if(!identical(chipps_base[ ,col_name], chipps_tidy[ ,col_name])) {
+    print(col_name)
+  }
+}
+
+# WaterTemp's are the same up to some machine level precision:
+unique(chipps_base$WaterTemp - chipps_tidy$WaterTemp)
+
+# Round WaterTemp's to one decimal place for comparison purposes:
+chipps_base$WaterTemp <- round(chipps_base$WaterTemp, 1)
+chipps_tidy$WaterTemp <- round(chipps_tidy$WaterTemp, 1)
+
+identical(chipps_base, chipps_tidy)
+```
+
+
+## Long and wide data
+
+*Long* and *wide* refer to different ways to structure a dataset. Different 
+applications call for different structures, so it's useful to understand what these 
+terms mean and how to convert a dataset from one type to the other. Generally, long data 
+will have more rows and fewer columns while wide data will have fewer rows and more 
+columns.
+
+1) Here's one way to think about it:
+
+* long data: all of the column names are *variables*, not values
+* wide data: some of the column names are *values* of variables
+
+2) Here's another way to think about it:
+
+* long data: an observation is spread out across multiple rows 
+* wide data: an observation is spread out across multiple columns
+
+**Example:**
+
+The following is an example of converting some Chipps trawl data from long to wide format. 
+Here is an overview of what's going on according to the two perspectives described above:
+
+1) In `long_data`, all of the column names (StationCode, SampleDat,e etc.) are variables, 
+or general concepts. In `wide_data`, the values from the OrganismCode variable are now 
+column names with count as the corresponding value.
+  
+2) Define an observation as a single tow. In `long_data`, different organism codes and counts from a single tow are spread out across rows (and other values such as date are repeated as necessary). In `wide_data` there is one row per tow, and tow-specific organism codes and 
+counts data are spread out across multiple columns.
+
+**Long version:**
+```{r}
+long_data <- read.csv(file.path(root,"data","chipps_data_base.csv")) %>%
+  dplyr::select(-c(Location, SampleTime, MethodCode, GearConditionCode, WaterTemp))
+```
+
+```{r, echo=FALSE}
+knitr::kable(head(long_data)) %>%
+  kableExtra::kable_styling(font_size=13)
+```
+
+**Wide version:**
+```{r}
+wide_data <- tidyr::pivot_wider(data=long_data, 
+                                names_from=OrganismCode, 
+                                values_from=Count, 
+                                values_fill=0)
+```
+
+```{r, echo=FALSE}
+knitr::kable(head(wide_data)) %>%
+  kableExtra::kable_styling(font_size=13)
+```
+

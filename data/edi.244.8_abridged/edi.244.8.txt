@@ -1,0 +1,4558 @@
+
+  
+    uid=EDI,o=EDI,dc=edirepository,dc=orgall
+      uid=iep,o=EDI,dc=edirepository,dc=org
+      all
+    
+    
+      public
+      read
+    
+  
+  
+    doi:10.6073/pasta/8dfe5eac4ecf157b7b91ced772aa214aInteragency Ecological Program: Over four decades of juvenile fish monitoring data from the San Francisco Estuary, collected by the Delta Juvenile Fish Monitoring Program, 1976-2021
+    
+       Interagency Ecological Program (IEP)
+    
+    
+      Ryan McKenzie
+      United States Fish and Wildlife Service
+      ryan_mckenzie@fws.gov
+      https://orcid.org/0000-0002-9667-7408
+    
+    
+      Jonathan Speegle
+      United States Fish and Wildlife Service
+      jonathan_speegle@fws.gov
+      https://orcid.org/0000-0002-1780-8351
+    
+    
+      Adam Nanninga
+      United States Fish and Wildlife Service
+      adam_nanninga@fws.gov
+      https://orcid.org/0000-0002-2140-0439
+    
+    
+      John Cook
+      United States Fish and Wildlife Service
+      john_cook@fws.gov
+      https://orcid.org/0000-0003-0081-6627
+    
+    
+      Jackie Hagen
+      United States Fish and Wildlife Service
+      jackie_hagen@fws.gov
+    
+    
+      Andrew Goodman
+      United States Fish and Wildlife Service
+      contributor
+    
+    
+      Mike Marshall
+      United States Fish and Wildlife Service
+      contributor
+    
+    
+      Kate Erly
+      United States Fish and Wildlife Service
+      contributor
+    
+    
+      Brynn Perales
+      United States Fish and Wildlife Service
+      contributor
+    
+    
+      Phil Voong
+      United States Fish and Wildlife Service
+      contributor
+    
+    
+      Justin Dummitt
+      United States Fish and Wildlife Service
+      contributor
+    
+    
+      Joshua Slocum
+      United States Fish and Wildlife Service
+      contributor
+    
+    
+      Morgan Gilbert
+      United States Fish and Wildlife Service
+      https://orcid.org/0000-0003-0219-3902
+      contributor
+    
+    
+      David Bridgman
+      United States Fish and Wildlife Service
+      contributor
+    
+    
+      Eric Ojerholm
+      United States Fish and Wildlife Service
+      contributor
+    
+    
+      Harrison Kazik
+      United States Fish and Wildlife Service
+      contributor
+    
+    
+      Jacob Stagg
+      United States Fish and Wildlife Service
+      contributor
+    
+    
+      Debra Henry
+      United States Fish and Wildlife Service
+      contributor
+    
+    
+      Gershom Bigham
+      United States Fish and Wildlife Service
+      contributor
+    
+    
+      Mike Berg
+      United States Fish and Wildlife Service
+      contributor
+    
+    
+      Adriana Arrambide
+      United States Fish and Wildlife Service
+      contributor
+    
+    
+      David Dominguez
+      United States Fish and Wildlife Service
+      contributor
+    
+    
+      Jackie Hagen
+      United States Fish and Wildlife Service
+      contributor
+    
+    
+      Patrick Hapgood
+      United States Fish and Wildlife Service
+      contributor
+    
+    
+      Paul Gary
+      United States Fish and Wildlife Service
+      contributor
+    
+    
+      Benjamin Brewster
+      United States Fish and Wildlife Service
+      contributor
+    
+    
+      Ryan Kneifel
+      United States Fish and Wildlife Service
+      contributor
+    
+    
+      Rick Williams
+      United States Fish and Wildlife Service
+      contributor
+    
+    
+      Clayton Miller
+      United States Fish and Wildlife Service
+      contributor
+    
+    
+      Matt Myrick
+      United States Fish and Wildlife Service
+      contributor
+    
+    
+      James Krueger
+      United States Fish and Wildlife Service
+      contributor
+    
+    
+      Jeff Gronemyer
+      United States Fish and Wildlife Service
+      contributor
+    
+    
+      Klayton Harmon
+      United States Fish and Wildlife Service
+      contributor
+    
+    
+      Joe Sonnenberg
+      United States Fish and Wildlife Service
+      contributor
+    
+    
+      Claudia Macfarlane
+      United States Fish and Wildlife Service
+      contributor
+    
+    
+      Chelsea Crosby
+      United States Fish and Wildlife Service
+      contributor
+    
+    
+      Adelaide Robinson
+      United States Fish and Wildlife Service
+      contributor
+    
+    
+      Kate Huber
+      United States Fish and Wildlife Service
+      contributor
+    
+    
+      Mike Talley
+      United States Fish and Wildlife Service
+      contributor
+    
+    
+      Jennie Wiggins
+      United States Fish and Wildlife Service
+      contributor
+    
+    
+      Madeline Toolen
+      United States Fish and Wildlife Service
+      contributor
+    
+    
+      Kandi Vargas
+      United States Fish and Wildlife Service
+      contributor
+    
+    
+      Jordan Buxton
+      United States Fish and Wildlife Service
+      contributor
+    
+    
+      Allie Patrick
+      United States Fish and Wildlife Service
+      contributor
+    
+    
+      Rebecca Heisey
+      United States Fish and Wildlife Service
+      contributor
+    
+    
+      Britany Perry
+      United States Fish and Wildlife Service
+      contributor
+    
+    
+      Kristie Braken-Guelke
+      United States Fish and Wildlife Service
+      contributor
+    
+    
+      Bryant Jew
+      United States Fish and Wildlife Service
+      contributor
+    
+    
+      Marelle Arndt
+      United States Fish and Wildlife Service
+      contributor
+    
+    
+      Stephen Staiger
+      United States Fish and Wildlife Service
+      contributor
+    
+    
+      Vanessa Mora
+      United States Fish and Wildlife Service
+      contributor
+    
+    
+      Erin Sharkey
+      United States Fish and Wildlife Service
+      contributor
+    
+    
+      Dan Rinkenberg
+      United States Fish and Wildlife Service
+      contributor
+    
+    
+      Gabriela Garcia
+      United States Fish and Wildlife Service
+      contributor
+    
+    
+      Sara Nece
+      United States Fish and Wildlife Service
+      contributor
+    
+    
+      Kristie Okimoto
+      United States Fish and Wildlife Service
+      contributor
+    
+    
+      Emily Flink
+      United States Fish and Wildlife Service
+      contributor
+    
+    
+      Nick Fischer
+      United States Fish and Wildlife Service
+      contributor
+    
+    
+      Shawn Sanders
+      United States Fish and Wildlife Service
+      contributor
+    
+    
+      Don Marcetti
+      United States Fish and Wildlife Service
+      contributor
+    
+    
+      Justin McClain
+      United States Fish and Wildlife Service
+      contributor
+    
+    
+      Andreas Raisch
+      United States Fish and Wildlife Service
+      contributor
+    
+    
+      Austin Demarest
+      United States Fish and Wildlife Service
+      associate
+    
+    
+      Paul Cadrett
+      United States Fish and Wildlife Service
+      associate
+    
+    
+      Lori Smith
+      United States Fish and Wildlife Service
+      associate
+    
+    
+      Baker Holden
+      United States Fish and Wildlife Service
+      associate
+    
+    
+      Jeff McLain
+      United States Fish and Wildlife Service
+      associate
+    
+    2021-11-09
+    
+      The United States Fish and Wildlife Service Delta Juvenile Fish Monitoring Program (DJFMP) has monitored juvenile Chinook Salmon Oncorhynchus tshawytscha and other fish species within the San Francisco Estuary (Estuary) since 1976 using a combination of surface trawls and beach seines. Since 2000, three trawl sites and 58 beach seine sites have been sampled weekly or biweekly within the Estuary and lower Sacramento and San Joaquin Rivers. As part of the Interagency Ecological Program (IEP) that manages the Estuary, the DJFMP has tracked the relative abundance and distribution of naturally and hatchery produced juvenile Chinook Salmon of all races as they outmigrate through the Sacramento-San Joaquin Delta for over four decades. The data that DJFMP collected has been used not only to help inform the management of Chinook Salmon, but also to monitor the status of native species of interest such as the previously listed Sacramento Splittail Pogonichthys macrolepidotus and invasive species such as Mississippi Silverside Menidia beryllina and Largemouth Bass Micropterus salmoides. 
+      For more information: https://www.fws.gov/lodi/juvenile_fish_monitoring_program/
+    
+    
+      aquatic ecosystems
+      ecology
+      estuaries
+      brackish water
+      freshwater
+      rivers
+      fishes
+      trout
+      abundance
+      endangered species
+      invasive species
+      water quality
+      LTER controlled vocabulary
+    
+    
+      beach seine
+      Interagency Ecological Program for the San Francisco Bay Delta Estuary
+      United States Fish and Wildlife Service
+      San Francisco Estuary
+      Sacramento-San Joaquin Delta
+      nearshore fishes
+      Chinook Salmon
+      Delta Smelt
+      Sacramento Splittail
+      Largemouth Bass
+      Mississippi Silverside
+    
+    
+      Peer reviewed articles derived from this dataset:
+      Baerwald M, Bien V, Feyrer F, May B (2007) Genetic analysis reveals two distinct Sacramento splittail (Pogonichthys macrolepidotus) populations. Conservation Genetics, 8: 159-167.
+      Brown LR, May JT (2006) Variation in Spring Nearshore Resident Fish Species Composition and Life Histories in the Lower Sacramento-San Joaquin Watershed and Delta. San Francisco Estuary and Watershed Science, 4(2): Article 2.
+      Buchanan RA, Skalski JR, Brandes PL, Fuller A (2013) Route use and survival of juvenile Chinook salmon through the San Joaquin River Delta. North American Journal of Fisheries Management, 33:216–229.
+      del Rosario RB, Redler YJ, Newman KB, Brandes PL, Sommer T, Reece K, Vincik R (2013) Migration patterns of juvenile winter-run size Chinook salmon (Oncorhynchus tshawytscha) through the Sacramento–San Joaquin Delta. San Francisco Estuary and Watershed Sciences, 11(1): Article 3.
+      Feyrer F, Sommer TR, Baxter RD (2005) Spatial-temporal distribution and habitat associations of age-0 Splittail in the Lower San Francisco Estuary Watershed. Copeia, 1: 159-168.
+      Goertler PA, Sommer TR, Satterthwaite WH, Schreier BM (2018) Seasonal floodplain-tidal slough complex supports size variation for juvenile Chinook salmon (Oncorhynchus tshawytscha). Ecology of Freshwater Fish, 27:580-593.
+      Hamilton SA, Murphy DD (2018) Analysis of Limiting Factors Across the Life Cycle of Delta Smelt (Hypomesus transpacificus). Environmental Management, 62: 365-382.
+      Holbrook CM, Perry RW, Brandes PL, Adams NS (2013) Adjusting Survival Estimates for Premature Transmitter Failure: A Case Study from the Sacramento-San Joaquin Delta. Environmental Biology of Fishes, 96: 165–173.
+      Kimmerer WJ (2008) Losses of Sacramento River Chinook Salmon and Delta Smelt (Hypomesus transpacificus) to Entrainment in Water Diversions in the Sacramento-San Joaquin Delta. San Francisco Estuary and Watershed Science, 6(2): Article 2.
+      Kirsch JE, Day JL, Peterson JT, Fullerton DK (2018) Fish Misidentification and Potential Implications to Monitoring Within the San Francisco Estuary, California. Journal of Fish and Wildlife Management, 9(2): 467-485.
+      Mahardja B, May B, Feyrer F, Coalter R, Fangue N, Foin T, Baerwald MR (2015) Interannual variation in connectivity and comparison of effective population size between two splittail (Pogonichthys macrolepidotus) populations in the San Francisco Estuary. Conservation Genetics, 16: 385-398.
+      Mahardja B, Conrad JL, Lusher L, Schreier B (2016) Abundance trends, distribution, and habitat associations of the invasive Mississippi Silverside (Menidia audens) in the Sacramento-San Joaquin Delta, California, USA. San Francisco Estuary and Watershed Science, 14(1): Article 1.
+      Mahardja B, Farruggia MJ, Schreier B, Sommer T (2017) Evidence of a shift in the littoral fish community of the Sacramento-San Joaquin Delta. PloS ONE, 12(1): e0170683.
+      McLain J, Castillo G (2009) Nearshore areas used by Chinook salmon fry, Oncorhynchus tshawytscha, in the northwestern Sacramento-San Joaquin Delta, California. San Francisco Estuary and Watershed Science, 7(2): Article 1.
+      Moyle PB, Baxter RD, Sommer T, Foin TC, Matern SA (2004) Biology and Population Dynamics of Sacramento Splittail (Pogonichthys macrolepidotus) in the San Francisco Estuary: A Review. San Francisco Estuary and Watershed Science, 2(2): Article 2.
+      Munsch SH, Greene CM, Johnson RC, Satterthwaite WH, Imaki H, Brandes PL (2019) Warm, dry winters truncate timing and size distribution of seaward-migrating salmon across a large, regulated watershed. Ecological Applications, e01880.
+      Newman KB, Rice J (2002) Modeling the survival of Chinook salmon smolts outmigrating through the lower Sacramento River system. Journal of the American Statistical Association, 97: 983–993.
+      Newman KB. (2003) Modelling paired release–recovery data in the presence of survival and capture heterogeneity with application to marked juvenile salmon. Statistical Modelling, 3: 157–177.
+      Newman KB, Brandes PL (2010) Hierarchical modeling of juvenile Chinook salmon survival as a function of Sacramento–San Joaquin Delta water exports. North American Journal of Fisheries Management, 30: 157–169.
+      Perry RW, Brandes PL, Sandstrom PT, Ammann A, MacFarlane B, Klimley AP, Skalski JR (2010) Estimating survival and migration route probabilities of juvenile Chinook salmon in the Sacramento–San Joaquin River Delta. North American Journal of Fisheries Management, 30: 142–156.
+      Perry RW, Brandes PL, Burau JR, Klimley AP, MacFarlane B, Michel C, Skalski JR (2013) Sensitivity of survival to migration routes used by juvenile Chinook salmon to negotiate the Sacramento-San Joaquin River Delta. Environmental Biology of Fishes, 96: 381–392.
+      Perry RW, Buchanan RA, Brandes PL, Burau JR, Israel JA (2016) Anadromous Salmonids in the Delta: New Science 2006–2016. San Francisco Estuary and Watershed Science, 14(2): Article 7.
+      Perry RW, Pope A, Romine J, Brandes P, Burau J, Ammann A, Michel C (2018) Flow-mediated effects on travel time and survival of juvenile Chinook Salmon vary spatially in a complex tidally forced river delta. Canadian Journal of Fisheries and Aquatic Sciences, 75(11): 1886-1901.
+      Sommer TR, Nobriga ML, Harrell WC, Batham W, Kimmerer WJ (2001) Floodplain rearing of juvenile Chinook salmon: evidence of enhanced growth and survival. Canadian Journal of Fisheries and Aquatic Sciences, 58:325–333.
+      Steel AE, Sandstrom PT, Brandes PL, Klimley AP (2013) Migration route selection of juvenile Chinook salmon at the Delta Cross Channel, and the role of water velocity and individual movement patterns. Environmental Biology of Fishes, 96(2-3): 215-224.
+      Stevens DE, Miller LW. (1983) Effects of river flow on abundance of young Chinook salmon, American shad, longfin smelt, and delta smelt in the Sacramento-San Joaquin River System. North American Journal of Fisheries Management, 3: 425–437.
+      Williams JG (2012) Juvenile Chinook Salmon (Oncorhynchus tshawytscha) in and Around the San Francisco Estuary. San Francisco Estuary and Watershed Science, 10(3): Article 2.
+      Zeug SC, Cavallo BJ (2012) Influence of estuary conditions on the recovery rate of coded-wire-tagged Chinook salmon (Oncorhynchus tshawytscha) in an ocean fishery. Ecology of Freshwater Fish, 22: 157-168.
+      Zeug SC, Bergman PS, Cavallo BJ, Jones KS (2012) Application of a Life Cycle Simulation Model to Evaluate Impacts of Water Management and Conservation Actions on an Endangered Population of Chinook Salmon. Environmental Modeling and Assessment, 17(5): 455-467.
+    
+    
+      This information is released under the Creative Commons license - Attribution - CC BY (https://creativecommons.org/licenses/by/4.0/). The consumer of these data ("Data User" herein) is required to cite it appropriately in any publication that results from its use. The Data User should realize that these data may be actively used by others for ongoing research and that coordination may be necessary to prevent duplicate publication. The Data User is urged to contact the authors of these data if any questions about methodology or results occur. Where appropriate, the Data User is encouraged to consider collaboration or co-authorship with the authors. The Data User should realize that misinterpretation of data may occur if used out of context of the original study. While substantial efforts are made to ensure the accuracy of data and associated documentation, complete accuracy of data sets cannot be guaranteed. All data are made available "as is." The Data User should be aware, however, that data are updated periodically and it is the responsibility of the Data User to check for new versions of the data. The data authors and the repository where these data were obtained shall not be liable for damages resulting from any use or misinterpretation of the data. Thank you.
+    
+    https://doi.org/10.6073/pasta/8dfe5eac4ecf157b7b91ced772aa214a
+      
+        San Francisco Estuary California USA
+        
+          -122.4899
+          -121.176304
+          39.21999207
+          37.6131828
+        
+      
+      
+        
+          
+            1976-03-08
+          
+          
+            2021-12-31
+          
+        
+      
+    
+    
+      ongoing
+    
+    
+      Jonathan Speegle Data Manager
+      United States Fish and Wildlife Service
+      jonathan_speegle@fws.gov
+    
+    
+      Ryan McKenzie Fish Biologist
+      United States Fish and Wildlife Service
+      ryan_mckenzie@fws.gov
+    
+    
+      Adam Nanninga Field Crew Supervisor
+      United States Fish and Wildlife Service
+      adam_nanninga@fws.gov
+    
+    
+      J. Ryan Cook Field Crew Supervisor
+      United States Fish and Wildlife Service
+      john_cook@fws.gov
+    
+    
+      Geoff Steinhart Fish Biologist (Supervisor)
+      United States Fish and Wildlife Service
+      geoffrey_steinhart@fws.gov
+    
+    
+      Jackie Hagen Small Craft Operator Supervisor
+      United States Fish and Wildlife Service
+      jackie_hagen@fws.gov
+    
+    Environmental Data Initiativeinfo@environmentaldatainitiative.orghttps://environmentaldatainitiative.org0330j0z60Environmental Data Initiative
+      
+        
+          The Delta Juvenile Fish Monitoring Program (DJFMP) of the U.S. Fish and Wildlife Service Lodi Office (formerly Stockton Office) contributes to the monitoring of fish species in the San Francisco Estuary, California as part of the Interagency Ecological Program (IEP) for the San Francisco Estuary. The DJFMP has been monitoring populations of juvenile Chinook Salmon Oncorhynchus tshawytscha within the Sacramento-San Joaquin Delta (Delta) and its watershed since 1976 (Dekar et al. 2013). Prior to 1992, DJFMP conducted annual monitoring between April and June to assess the effects of water operations on the inter- and intra-annual abundance and distribution of primarily juvenile fall-run Chinook Salmon within the Delta and lower Sacramento River. Following the listing of Sacramento River winter-run Chinook Salmon as endangered by the State of California in 1989 (CDFW 2005) and the National Marine Fisheries Service in 1994 (59 FR 440), DJFMP expanded the long-term sampling program to one that operated between October and June to collect more information on all races of juvenile Chinook Salmon in the San Francisco Estuary. The DJFMP was further expanded in 1995 to sample year-round, in part, to expand the temporal and geographic monitoring of resident fish and Central Valley Steelhead Oncorhynchus mykiss (Dekar et al. 2013). Today, year-round monitoring continues with an emphasis on populations of all races of Chinook Salmon in the Delta per the monitoring and reporting terms of the Biological Opinion and Conference Opinion on the Long-Term Operations of the Central Valley Project and State Water Project (NMFS 2009). Data collected by DJFMP are intended to provide general biological and demographic information that can be used to assess trends over time. Detailed methodology for the DJFMP is as follows.
+          (1.) Data collection methods:
+          BEACH SEINE: We use beach seines to evaluate the spatial distribution of fishes occurring in unobstructed shallow near-shore habitats (e.g., beaches and boat ramps ≤ 1.2 m in depth) throughout the lower Sacramento and San Joaquin Rivers, the Sacramento-San Joaquin Delta, and the lower San Francisco Estuary. Beach seine sites are stratified into six geographic seine regions: (1) Lower Sacramento River, (2) North Delta, (3) Central Delta, (4) South Delta, (5) Lower San Joaquin River, and (6) San Francisco and San Pablo Bays. Seine regions are delineated by proximity to canals or water bypasses where fish may be diverted from historical migration routes. In this dynamic system, occasional changes in river flow or environmental conditions prevent sampling or make it necessary to temporarily relocate seine sites (e.g., tidal conditions, or submerged or floating aquatic vegetation blocking access to sites). If new seine sites were needed, we attempted to relocate the site to another location with similar habitat (e.g., hydrogeomorphic characteristics) that was less than 100 m from the original site.
+Access to beach seine sites in the Lower San Joaquin River seine region can be difficult under certain conditions. Since 2000, when the discharge of the lower San Joaquin River dropped below 51 m3/s and boat access to the regular beach seine locations became difficult, replacement sites that were accessible from land were sampled instead (station codes: SJ065W, SJ070W, SJ074A, SJ076W, SJ079E). 
+Under normal conditions (staff available, no obstructions at site, etc.), we conduct beach seine sampling once a week at each site for all seine regions except the Lower San Joaquin River and the San Francisco and San Pablo Bays regions. Beach seine sites within the Lower San Joaquin River Region were generally sampled once a week from January 1 to July 31 and once every two weeks from August 1 to December 31. The beach seine sites located within the San Francisco and San Pablo Bays Region were generally sampled once every two weeks due to the low occurrence of fish species of management concern at this area.
+          LIBERTY ISLAND BEACH SEINE: From 2002 to 2005, the DJFMP conducted a pilot field study at Liberty Island, a restoring wetland in the northern portion of the Sacramento-San Joaquin Delta that resulted from a levee breach, to determine how fish community structure is affected by the vegetation colonization and expansion in the region. Five years later, DJFMP conducted additional beach seine sampling from March 2010 through February 2013 under the BREACH III agreement with the California Department of Fish and Wildlife. Since 2013, field sampling at Liberty Island has been integrated into DJFMP’s beach seine monitoring program to provide baseline data that can serve as a reference site for future restoration efforts at Liberty Island and other sites in the Sacramento-San Joaquin Delta. 
+A total of 21 fixed sites, distributed among four quadrants within Liberty Island (northwest, northeast, southwest, and southeast quadrants), are sampled monthly (10–11 sites per trip, two trips per month). Ten sites were selected from locations previously sampled during the pilot study in 2002–2005 within the southern quadrants of Liberty Island. In 2010, eleven new sites were selected in the northern quadrants of Liberty Island to maximize spatial coverage. Liberty Island was broken up into four quadrants based on habitat types and exposure: station code LI number 1-5 are located in the southern quadrants whereas those numbered 6-11 are located in the northern quadrants; eastern and western quadrants are indicated by E and W at the end of station code names, respectively. The southern quadrants of Liberty Island are tidally influenced but remain inundated at low tide (station code LI number 1 to 5). The southeast quadrant of Liberty Island is susceptible to the effects of wind and wave erosion, whereas the southwest quadrant is more protected from those effects and tends to have more submerged aquatic vegetation. The northern quadrants of Liberty Island are heavily influenced by tide and are mostly characterized by exposed mudflats at low tide with a few channels and areas of inundation less than a meter. The northern quadrants have immense stands of emergent vegetation as well as large areas of submerged aquatic vegetation. Erosion due to wind and wave processes is limited to the southeast corner of the northeast quadrant of Liberty Island. Vegetation expansion and site erosion have greatly reduced our ability to conduct beach seine sampling in many sites within the Liberty Island region starting around 2016.
+          MIDWATER AND KODIAK TRAWLS: We use surface trawls to examine the relative abundance of fishes migrating into and out of the Sacramento-San Joaquin Delta. Trawl sites are located at the entry (Sacramento and Mossdale trawl sites) and exit (Chipps Island trawl Site) points of juvenile Chinook Salmon to the Sacramento-San Joaquin Delta. 
+We sample at trawl sites using Kodiak (KDTR) and mid-water (MWTR) trawls. The program exclusively uses a MWTR at the Chipps Island Trawl Site and a KDTR at the Mossdale Trawl Site. At the Sacramento Trawl Site (also called Sherwood Harbor), the program used MWTR exclusively prior to 1994, and has used a KDTR from October to March and a MWTR from April to September after 1994. The KDTR has been used in place of the MWTR at the Sacramento Trawl Site from October to March to maximize the capture of larger Chinook Salmon (Dekar et al. 2013). In general, each trawl site is sampled three days per week, ten tows per day, throughout the year. Trawl sites are generally sampled on Monday, Wednesday, and Friday each week throughout the field season to maximize temporal coverage. Between April and June, the California Department of Fish and Wildlife (CDFW) conduct sampling at the Mossdale trawl Site instead of the U.S. Fish and Wildlife Service (USFWS) using the same procedure. Data collected by both the USFWS and CDFW at the Mossdale Trawl Site are included in this dataset.
+During each sampling day, we attempted ten 20-minute tows between approximately 7am and 1pm at all trawl sites (night sampling did take place in previous years). All tows are conducted mid-channel and facing upstream at the Sacramento and Mossdale trawl sites, which constitute a reach length of approximately 6.5 km and 3 km, respectively. In contrast, tows were generally conducted facing either upstream or downstream in the north, south, and middle portions of the channel at the Chipps Island Trawl Site depending on tide direction and flow. The Chipps Island Trawl Site constitutes a reach length of approximately 4 km. The MWTR and KDTR nets are towed by one and two boats, respectively, in the top few meters of the water column at a speed necessary and distance apart (for KDTR) to ensure that the net mouth remained fully extended and submerged. The measure of the distance traveled during each tow was recorded using a calibrated mechanical flow meter (General Oceanics, Model #2030) deployed alongside the boat. 
+At the end of each MWTR tow, the net is retrieved by the towing vessel using a winch to collect all the fishes observed in the cod end. For KDTR net retrieval, the two towing vessels (i.e., net and chase boats) would maneuver alongside each other and the chase boat would transfer its tow rope to the net boat. Subsequently, the crew on the chase boat would travel downstream to the live box connected to the KDTR, retrieve, secure, and pull the live box from the water into the boat. All fishes collected from the cod end or live box are placed in a holding container filled with water for processing. Lastly, the crew would determine the condition of each tow as either “normal” (defined as no twists, snags, or tears in the net, little to no [<5%] debris in/on the net, and no [<5%] blockage between the mouth of the net to the live box), “fair” (defined as partial twists, snags, or small tears in the net, some [5–25% coverage] debris in/on the net, or partial [5–25%] blockage between the mouth of the net to the live box), or “poor” (defined as complete twists, snags, or large tears in the net, heavy [>25% coverage] debris in/on the net, or near complete [>25%] blockage between the mouth of the net to the live box).
+          FISH HANDLING: Generally, we identify all fish in each sample that were ≥ 25 mm fork length (FL) to species or race, with the exception of five species that are readily identified at ≥ 20 mm FL: Sacramento Splittail Pogonichthys macrolepidotus, Three-spine Stickleback Gasterosteus aculeatus, Western Mosquitofish Gambusia affinis, Rainwater Killifish Lucania parva, and Sacramento Sucker Catostomus occidentalis. Prior to release at the site of capture, we measure fish to the nearest 1 mm FL. If greater than 50 individuals of a Chinook Salmon race, as designated by the river length-at-capture-date criteria (LDC, see paragraph below), or other species listed under the Endangered Species Act (ESA) are captured, a subsample of 50 individuals is randomly measured for FL and the rest are counted and not measured (referred to as a “plus count”). For non-listed species, if greater than 30 individuals of a non-listed species are captured, a subsample of 30 individuals is randomly measured for FL and the rest are counted and not measured. Fish that could not be accurately identified in the field are preserved and brought back to the laboratory. The identification of preserved fishes is then confirmed with the use of dichotomous keys and/or with the aid of a microscope.
+The race of all unmarked juvenile Chinook Salmon (i.e., no adipose fin clip to indicate that it is a hatchery fish) was determined using the river LDC developed by Fisher (1992) and modified by Greene (1992). The assumptions associated with the river LDC for the Sacramento-San Joaquin River basin are that (1) spawning of fall-run Chinook Salmon occurs between October 1–December 31, (2) spawning of late fall-run Chinook Salmon occurs between January 1–April 15, (3) spawning of winter-run Chinook Salmon occurs between April 16–August 15, (4) spawning of spring-run Chinook Salmon occurs between August 16–September 30, and that (5) the growth rates of fish are identical among all Chinook Salmon races (Fisher 1992). Although one or more of these assumptions are likely violated (Fisher 1994; Yoshiyama et al. 1998), the river LDC is currently widely used by managers, and is the only cost effective and logistically feasible way to differentiate between the different races of juvenile Chinook Salmon in the field. Fisher (1994) noted that Chinook Salmon races within the Central Valley do appear to spawn at distinctly separate time periods except for fall- and spring-run due to the loss of headwater habitats (e.g., resulting from dams), forced coexistence, and subsequent hybridization within the Sacramento River basin (Banks et al. 2000; Greig et al. 2003; Banks et al. 2014). As a result, many of the Chinook Salmon characterized as spring-run by the river LDC may actually be fall-run. We use the river LDC to differentiate between unmarked winter-run, spring-run, fall-run, and late fall-run sized juvenile Chinook Salmon. The race designations used in this dataset should be considered a rough approximation and not interpreted as definitive. 
+Juvenile Chinook Salmon with missing (clipped) adipose fins are considered marked fish. Fish possessing other forms of marks or tags (e.g., stain dye, disc tags, acoustic tags) are included within this dataset, but only classified to either acoustic tag or others (including various colors of stain dyes, disc tags, etc.). All clipped juvenile Chinook Salmon observed in recent years are considered hatchery-reared and were brought back to the laboratory for coded wire tag retrieval in order to acquire information on hatchery origin and release location. 
+          WATER QUALITY: Water quality measurements are taken with YSI PRO 2030 Meter before or after each fish sample. We record temperature to the nearest 0.1˚C, dissolved oxygen to the nearest 0.01 mg/L, and conductivity to the nearest 0.01 micro siemen (µS). A Hach 2100Q Turbidity Meter is used to measure turbidity to the nearest 0.01 Nephelometric Turbidity Unit. At trawl sites, Secchi disk is also used measure water clarity.
+          (2.) Datasheet: Datasheet, standard operating procedure, and metadata Microsoft Word document are all available upon request (email data contact).
+          (3.) Instruments and equipment:
+          BEACH SEINE: The beach seine net used by the DJFMP is a 15.2 m x 1.3 m seine net with 15.9 kg Delta 0.3 cm2 mesh and a 1.3 m x 1.3 m bag.  Each net has a float line and lead line attached to 1.8 m-long wooden poles at each end.
+          MIDWATER TRAWL: The MWTR net used at the Sacramento Trawl Site is composed of six panels, each decreasing in mesh size towards the cod end. The mesh size for each panel ranged from 20.3 cm stretch at the mouth to 0.6 cm stretch just before the cod end. The cod end was composed of 0.3 cm weave mesh. The fully extended mouth size was 4.15 x 5.0 m. Two depressors and hydrofoils enable the net to remain at the top few meters of the water column while sampling. Depressors were made of 0.7 cm thick stainless steel (one on each side of the net lead line) and are attached to the net with shackles to extend the bottom line of the mouth. Hydrofoils were made of 0.7 cm thick aluminum plates with split floats (one on each side of the net float line) and are attached to the net with shackles to extend the top of the net at the water surface. On each side of the net, the depressor and hydrofoil are connected to the boat using a 30.5 m Amsteel rope bridle (0.64 cm diameter). The net is fished approximately 30 m behind the boat. 
+The MWTR net used at the Chipps Island Trawl Site is larger but similar in construction to the MWTR net used at the Sacramento trawl site. There are five panels, each with decreasing mesh size towards the cod end. The mesh size for each panel ranged from 10.2 cm stretch at the mouth to 2.5 cm stretch just before the cod end. The cod end was composed of 0.8 cm knotless material. The fully extended mouth size of the Chipps Island MWTR net is 7.64 by 9.65 m. The depressors and hydrofoils of the Chipps Island MWTR are larger and connected to the boat in the same way as those on the Sacramento MWTR. On each side of the net, the depressor and hydrofoil are connected to the boat using a 30.5 m Amsteel rope bridle (0.6 cm diameter) attached to a 15.2 m tow rope (0.95 cm diameter). The Chipps Island MWTR net is fished approximately 45 m behind the boat. 
+The measure of the distance traveled during each tow was recorded using a calibrated mechanical flow meter (General Oceanics, Model #2030) deployed alongside the boat. We estimated volume sampled by each trawl by calculating the difference between the end and starting value of the flow meter, and multiplying it by the factory-stated K calibration factor (0.026873) and the trawl net mouth area. Because the MWTR nets do not open completely while under tow and net mouth dimensions vary within and among tows (USFWS 1993), previously quantified estimates of mean net mouth area are used. The mean net mouth area for MWTR nets used for the Chipps Island and Sacramento trawl sites were obtained from 3–4 physical measurements taken while sampling and were reported as 18.58 m2 and 5.08 m2, respectively (USFWS 1993). 
+          KODIAK TRAWL: KDTRs are conducted with two vessels; a chase boat and a net boat.  The KDTR nets used at the Mossdale and Sacramento trawl sites are composed of five panels, each decreasing in mesh size towards a live box at the cod end.  The mesh size for each panel ranges from 5.1 cm stretch at the mouth to 0.3 cm stretch just before the live box. The live box (36 cm wide x 36 cm tall x 49 cm long) is composed of 0.18 cm thick aluminum that is perforated with numerous 0.46 cm diameter holes. The live box contains several internal baffles to minimize fish mortality and stress due to flow pressure. The fully extended mouth size of the KDTR net is 1.83 x 7.62 m. A float line and lead line enabled the net to remain at the top few meters of the water column while sampling.  In addition, at the front of each wing of the net is a 1.83 m spreader bar with floats at the top and weights at the bottom to keep depth constant while sampling. The KDTR net is connected to the boats using a 2.3 m rope bridle (2.4 cm diameter) attached to a 30.5 m tow rope (0.95 cm diameter) on each side of the net. The net is fished approximately 31 m from the boats. The measure of the distance traveled during each tow was recorded using a calibrated mechanical flow meter (General Oceanics, Model #2030) deployed alongside the boat. Volume sampled by each KDTR is estimated by calculating the difference between the end and starting value of the flow meter, and multiplying it by the factory-stated K calibration factor (0.026873) and the trawl net mouth area.  The mean net mouth area for KDTR nets used for the Mossdale and Sacramento trawl sites was estimated to be 12.54 m2 based on the program’s 1995 annual report (USFWS 1998).
+          WATER QUALITY: The YSI PRO 2030 Meter is used to measure water quality parameters such as temperature, dissolved oxygen, and conductivity. The Hach 2100Q Turbidity Meter is used to measure turbidity. At trawl sites, a Secchi disk is also used measure water clarity.
+          (4.) Analysis and methods (standard operating procedures): Data is in its original form and no catch per effort calculations have been made. Standard operating procedures for methods and quality checks are available upon request.
+          (5.) Project history (change in methods and locations):
+Modifications to all fish sampling (trawls and beach seines) are made regularly to improve data accuracy, adhere to permit limitations, and accommodate safety conditions and/or special studies. 
+          PROGRAM-WIDE CHANGES:
+          1977-1992: Before August 1st 1977, all Chinook Salmon captured were measured and fork lengths recorded.  Between August 1st 1977 and July 31st 1992, only fifty Chinook Salmon from each sample taken were measured and those not measure were recorded as a total sum, minus those measured.  
+          1992: After August 1st 1992, fifty individuals from each race of Chinook Salmon were measured and those not measured were summed and assigned a count reference number to associate with measured Chinook Salmon.  
+          1995: Since July of 1995, fish shorter than 25 mm FL are considered to be too small to be accurately identified in the field and as such are not recorded. Exceptions to this are: Sacramento Splittail Pogonichthys macrolepidotus, Three-spine Stickleback Gasterosteus aculeatus, Western Mosquitofish Gambusia affinis, Rainwater Killifish Lucania parva, and Sacramento Sucker Catostomus occidentalis, which are considered identifiable down to 20 mm FL in the field.
+          1995: The DJFMP was further expanded in 1995 to sample year-round, in part, to expand the temporal and geographic monitoring of resident fish and Central Valley Steelhead Oncorhynchus mykiss.
+          1996: Temperatures were recorded on datasheets in Celsius instead of Fahrenheit. Previous Fahrenheit data were converted into Celsius in the database.
+          2006: Gear condition code 4 began to be entered into the database on August 1st 2006 (not included in this dataset). Condition code 4 indicates that site was visited, but could not be sampled.
+          2007: See note on 1992 changes to Chinook Salmon race assignment. After August 1st 2007, the need for count reference numbers was eliminated as unmarked Chinook Salmon and their associated summed counts were automatically raced in the database.  
+          2011: The program began taking turbidity, dissolved oxygen, and conductivity measurements on August 1st 2011 to provide environmental data.
+          2019: Specific conductance is used instead of un-specified conductivity measurement. Unclear whether conductivity measurements in prior years were adjusted for temperature.
+          Specific considerations for each fishing method/gear type are as follows and should be considered in analyses when using the dataset:
+          BEACH SEINE:
+          1978: Multiple Lower Sacramento River beach seine sites were moved from beaches to nearby boat ramps.
+          1994: Beach seining was expanded to include San Joaquin River and South Delta regions.
+          2000: Fish that cannot be identified easily to species are recorded as unidentified fish.
+          2002-2005: Pilot study at Liberty Island.
+          2004: Sampling at Grayson site (SJ087W) was discontinued for safety reasons.
+          2007: Beginning in 2007, Stump Beach site (SR012E) is replaced by Sandy Beach site (SR012W).
+          2013: Beach seining was expanded to include Liberty Island. Several new beach seine stations at Liberty Island were added.
+          TRAWLS:
+          1976-1981: Trawl sampling the Sacramento River (i.e., Sacramento Trawl Site) was conducted at Clarksburg instead of the current Sherwood Harbor (precursor to current Sherwood Harbor location). 
+          1976-1986: No start or end values recorded for flow meters, only calculated difference between two values were entered into database. 
+          1985: Net dimensions and flow meter values started being recorded for catch per cubic meter calculations to determine the volume of water sampled.
+          1990: Midwater trawl was conducted at Hood location in February and March for a special study.
+          1994: Kodiak trawls started to be used regularly at the Sacramento Trawl Site near Sherwood Harbor to allow the capture of the larger, less abundant races of juvenile Chinook Salmon.
+          1996: Began the recording of flow meter gear ID to document the differences in K factors across flow meters.
+          1998: Adult salmon and steelhead counted, but not measured to reduce handling stress. Length was estimated visually and documented as either >500 mm or >300 mm.
+          2001: Larger mesh trawl nets (8 mm) used consistently at Chipps Island site for midwater trawls. Previously, several trawl nets with smaller mesh sizes (6.3 mm) were used intermittently at Chipps Island.
+          2001: Benicia, an alternate location for Chipps Island site, was used briefly to reduce take of the endangered Delta Smelt. 
+          2006: Starting on October 6th 2006, small wires has been used to secure flow meters during trawls to reduce turbulence and improve flow meter accuracy.
+          2008: Benicia, an alternate location for Chipps Island site, was used briefly to reduce take of the endangered Delta Smelt. 
+          2011: In fall of 2011, sampling effort at Chipps Island was curtailed to limit catch of the endangered Delta Smelt Hypomesus transpacificus.
+          2013: Gear condition code 9 began to be entered into the database on April 1st 2013. Condition code 9 indicates that a fish cannot be assigned to a specific tow (e.g., fish was gilled in trawl net and therefore not processed at the end of proper tow in the cod end of the net).
+          (6.) QA/QC: 
+          METHODS: Starting in 2001, the program has had a dedicated fish biologist that is responsible for training field personnel in fish identification and implementing a field Quality Assurance/Quality Control (QA/QC) program.  The QA/QC program consists of testing the field crew using preserved and wild specimens at least twice a year, reviewing preserved fish samples that are brought back from the field, and accompanying field personnel when sampling to assure correct identification of the fish species.  All personnel are trained following standard operating procedures (SOP) for field sampling during their first week of employment and then work with experienced employees for the first 3 months of their employment.  Our current protocol states that any fish the field crew has difficulty identifying are to be brought back to the office to ensure correct identification.
+The YSI PRO 2030 Meter instrument is calibrated daily and if a calibration fails, the instrument would no longer be used until the necessary repairs have been made. The Hach 2100Q Turbidity Meter is checked and calibrated every three months and is replaced when needed. 
+          DATA: Data is entered into Microsoft Access form with customized error-checking and data validation checks. Prior to 2017, data QA/QC was done by having a crew member compare the original field data sheet with the entered data line-by-line to ensure that the values in the field datasheet and the database match. The program initiated a new data QA/QC protocol in 2017 in which data is entered twice into two separate databases and then followed by a custom query that attempt to match the two datasets. When a mismatch is found, the field data sheet is reviewed and errors are corrected in the main and/or the duplicate database.
+          (7.) Contractor information: All fish identification and water quality measures are conducted by the field staff of the Delta Juvenile Fish Monitoring Program, Lodi Fish and Wildlife Office, United States Fish and Wildlife Service. 
+          (8.) External review process: There is no external review process.
+          (9.) Methods references: 
+          Banks MA, Rashbrook VK , Calavetta MJ, Dean CA, Hedgecock D (2000) Analysis of microsatellite DNA resolves genetic structure and diversity of Chinook Salmon (Oncorhynchus tshawytscha) in California’s Central Valley. Canadian Journal of Fisheries and Aquatic Sciences, 57:915–927.
+          Banks MA, Jacobson DP, Meusnier I, Greig CA, Rashbrook VK, Ardren WR, Smith CT, Bernier-Latmani J, Van Sickle J, O’Malley KG (2014) Testing advances in molecular discrimination among Chinook Salmon life histories: evidence from a blind test. Animal Genetics, 45(3):412–420.
+          California Department of Fish and Wildlife (CDFW) (2005) The status of rare, threatened, and endangered plants and animals of California 2000–2004. Available: https://www.wildlife.ca.gov/Conservation/CESA. (January 2014).
+          Dekar M, Brandes P, Kirsch J, Smith L, Speegle J, Cadrett P, Marshall M (2013) USFWS Delta Juvenile Fish Monitoring Program review background report. Stockton Fish and Wildlife Office, United States Fish and Wildlife Service, Lodi, California.
+          Fisher FW (1994) Past and present status of Central Valley Chinook Salmon. Conservation Biology, 8(3):870–873.
+          Greig C, Jacobson DP, Banks MA (2003) New tetranucleotide microsatellites for fine-scale discrimination among endangered Chinook Salmon (Oncorhynchus tshawytscha). Molecular Ecology Notes, 3:376–379. 
+          Greene S (1992) Memorandum: Daily length tables. California Department of Water Resources. Environmental Services Office Sacramento, California. May 1992
+          National Marine Fisheries Service (NMFS) (2009) Biological opinion and conference opinion on the long-term operations of the central valley project and state water project. NMFS Southwest Region. Long Beach, California.
+          United States Fish and Wildlife Service (USFWS) (1993) 1992 Annual progress report: abundance and survival of juvenile Chinook Salmon in the Sacramento-San Joaquin Estuary. Stockton Fish and Wildlife Office, United States Fish and Wildlife Service, Stockton, California.
+          United States Fish and Wildlife Service (USFWS) (1998) 1995 Annual progress report: abundance and survival of juvenile Chinook Salmon in the Sacramento-San Joaquin Estuary. Stockton Fish and Wildlife Office, United States Fish and Wildlife Service, Stockton, California.
+          Yoshiyama RM, Fisher FW, Moyle PB (1998) Historical abundance and decline of Chinook Salmon in the Central Valley Region of California. North American Journal of Fisheries Management, 18:487–521. 
+          *See Additional Information for a list of peer-reviewed publications and more detailed information on methodology references listed in this dataset. 
+
+        
+      
+    
+    
+      1976-2001_DJFMP_trawl_fish_and_water_quality_data.csv
+      Fish catch and water quality data from the Delta Juvenile Fish Monitoring Program Trawl Survey 1976-2001
+      
+        1976-2001_DJFMP_trawl_fish_and_water_quality_data.csv
+        183147168
+        712658d3a9ae447f2ba6ee4b711677a2
+        
+          
+            1
+            \r\n
+            column
+            
+              ,
+              "
+            
+          
+        
+        
+          
+            https://pasta.lternet.edu/package/data/eml/edi/244/8/71c16ead9b8ffa4da7a52da180f601f4
+          
+        
+      
+      
+        
+          Location
+          Full name of the sampling site/location
+          string
+          
+            
+              
+                
+                  Full name of the sampling site/location
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          RegionCode
+          Region designation for the station; 1= Lower Sacramento River, 2= North Delta, 3= Central Delta, 4= South Delta, 5= San Joaquin River, 6= Bay Area, 7= Sacramento River
+          string
+          
+            
+              
+                
+                  
+                    1
+                    Lower Sacramento River
+                  
+                  
+                    2
+                    North Sacramento-San Joaquin Delta
+                  
+                  
+                    3
+                    Central Sacramento-San Joaquin Delta
+                  
+                  
+                    4
+                    South Sacramento-San Joaquin Delta
+                  
+                  
+                    5
+                    San Joaquin River
+                  
+                  
+                    6
+                    Bay Area
+                  
+                  
+                    7
+                    Sacramento River
+                  
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          StationCode
+          Code of the station that was sampled. Abbreviated body of water, river mile, and general location within the water body
+          string
+          
+            
+              
+                
+                  Code of the station that was sampled. Abbreviated body of water, river mile, and general location within the water body
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          SampleDate
+          Date sampled
+          date
+          
+            
+              YYYY-MM-DD
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          SampleTime
+          Time sampled
+          date
+          
+            
+              hh:mm:ss
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          MethodCode
+          Sampling collection method including beach seine, Kodiak trawl, and midwater trawl; SEIN=seine, MWTR=mid-water trawl, KDTR=Kodiak trawl
+          string
+          
+            
+              
+                
+                  
+                    SEIN
+                    Beach Seine
+                  
+                  
+                    MWTR
+                    Midwater Trawl
+                  
+                  
+                    KDTR
+                    Kodiak Trawl
+                  
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          GearConditionCode
+          Overall condition of sample. 1=good sample, 2=fair, 3=poor, 9=fish gilled in trawl net, not caught properly
+          string
+          
+            
+              
+                
+                  
+                    1
+                    Good sample
+                  
+                  
+                    2
+                    Fair sample
+                  
+                  
+                    3
+                    Poor sample
+                  
+                  
+                    4
+                    No sampling done
+                  
+                  
+                    8
+                    Sea lion caught in sample; sampling cut chort
+                  
+                  
+                    9
+                    Fish that were gilled in trawl net and not caught properly
+                  
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          WeatherCode
+          Weather condition at time of sample. CLR=clear, CLD=cloud, RAN=rain, FOG=fog, NIT=night, WND=windy
+          string
+          
+            
+              
+                
+                  
+                    CLR
+                    Clear
+                  
+                  
+                    CLD
+                    Cloudy
+                  
+                  
+                    RAN
+                    Rain
+                  
+                  
+                    FOG
+                    Fog
+                  
+                  
+                    NIT
+                    Night
+                  
+                  
+                    WND
+                    Windy
+                  
+                
+              
+            
+          
+          
+            NA
+            Not recorded
+          
+        
+        
+          DO
+          Dissolved oxygen level
+          float
+          
+            
+              
+                milligramsPerLiter
+              
+              
+                natural
+              
+            
+          
+          
+            NA
+            Not recorded
+          
+        
+        
+          WaterTemp
+          Water temperature
+          float
+          
+            
+              
+                celsius
+              
+              
+                real
+                
+                  5.55555582046509
+                  28.5
+                
+              
+            
+          
+          
+            NA
+            Not recorded
+          
+        
+        
+          Turbidity
+          Turbidity of water
+          float
+          
+            
+              
+                nephelometricTurbidityUnit
+              
+              
+                natural
+              
+            
+          
+          
+            NA
+            Not recorded
+          
+        
+        
+          Secchi
+          Secchi depth of water
+          float
+          
+            
+              
+                meter
+              
+              
+                real
+                
+                  0.0399999991059303
+                  2
+                
+              
+            
+          
+          
+            NA
+            Not recorded
+          
+        
+        
+          SpecificConductance
+          Conductivity of water at 25 degrees centigrade
+          float
+          
+            
+              
+                microSiemensPerCentimeter
+              
+              
+                natural
+              
+            
+          
+          
+            NA
+            Not recorded
+          
+        
+        
+          TowNumber
+          Tow number for sample
+          float
+          
+            
+              
+                dimensionless
+              
+              
+                natural
+                
+                  1
+                  28
+                
+              
+            
+          
+          
+            NA
+            Not a trawl site
+          
+        
+        
+          SamplingDirection
+          The direction in which the tow was done. U= Upstream, D= Downstream, X= Neither or not applicable
+          string
+          
+            
+              
+                
+                  
+                    U
+                    Upstream
+                  
+                  
+                    D
+                    Downstream
+                  
+                  
+                    X
+                    Neither or not applicable
+                  
+                
+              
+            
+          
+          
+            NA
+            Tow direction not recorded or site was a beach seine site
+          
+        
+        
+          TowDuration
+          Duration in minutes
+          float
+          
+            
+              
+                dimensionless
+              
+              
+                whole
+                
+                  0
+                  40
+                
+              
+            
+          
+          
+            NA
+            Not recorded or site was a beach seine site
+          
+        
+        
+          FlowDebris
+          Flow meter fouled, did not operate properly
+          string
+          
+            
+              
+                
+                  
+                    Y
+                    Flow meter was fouled
+                  
+                  
+                    N
+                    Flow meter worked as intended
+                  
+                
+              
+            
+          
+          
+            NA
+            No flow meter information taken or it is a beach seine sampling event.
+          
+        
+        
+          SiteDisturbance
+          Has site been disturbed
+          string
+          
+            
+              
+                
+                  
+                    Y
+                    Site has been disturbed
+                  
+                  
+                    N
+                    Site has not been disturbed
+                  
+                
+              
+            
+          
+          
+            NA
+            Not recorded
+          
+        
+        
+          AlternateSite
+          Is site an alternative site
+          string
+          
+            
+              
+                
+                  
+                    Y
+                    Sample was conducted at an alternate site nearby
+                  
+                  
+                    N
+                    Sample was conducted at the regular location
+                  
+                
+              
+            
+          
+          
+            NA
+            Not recorded
+          
+        
+        
+          SeineLength
+          Length of beach seine
+          float
+          
+            
+              
+                meter
+              
+              
+                natural
+              
+            
+          
+          
+            NA
+            No seine length recorded or it is a trawl sampling event.
+          
+        
+        
+          SeineWidth
+          Width of beach seine
+          float
+          
+            
+              
+                meter
+              
+              
+                natural
+              
+            
+          
+          
+            NA
+            No seine width recorded or it is a trawl sampling event.
+          
+        
+        
+          SeineDepth
+          Starting depth of beach seine
+          float
+          
+            
+              
+                meter
+              
+              
+                natural
+              
+            
+          
+          
+            NA
+            No seine depth recorded or it is a trawl sampling event.
+          
+        
+        
+          FlowmeterStart
+          Starting number of flow meter
+          float
+          
+            
+              
+                dimensionless
+              
+              
+                whole
+                
+                  0
+                  1088261
+                
+              
+            
+          
+          
+            NA
+            No flow meter data taken or that it is a beach seine sampling event.
+          
+        
+        
+          FlowmeterEnd
+          End number of flow meter
+          float
+          
+            
+              
+                dimensionless
+              
+              
+                whole
+                
+                  0
+                  1133855
+                
+              
+            
+          
+          
+            NA
+            No flow meter data taken or that it is a beach seine sampling event.
+          
+        
+        
+          FlowmeterDifference
+          Difference between starting and end number for the flow meter
+          float
+          
+            
+              
+                dimensionless
+              
+              
+                natural
+                
+                  109
+                  204211
+                
+              
+            
+          
+          
+            NA
+            No flow meter data taken or that it is a beach seine sampling event.
+          
+        
+        
+          Volume
+          Estimated volume of water sampled in trawl or beach seine
+          float
+          
+            
+              
+                cubicMeter
+              
+              
+                real
+                
+                  23.2075228
+                  47657.21885232
+                
+              
+            
+          
+          
+            NA
+            Volume of water sampled could not be calculated
+          
+        
+        
+          OrganismCode
+          A unique 1 to 4 letter character code used by DJFMP  for each species
+          string
+          
+            
+              
+                
+                  A unique 1 to 4 letter character code used by DJFMP  for each species
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          IEPFishCode
+          A standardized six letter code used for each species across the Interagency ecological program
+          string
+          
+            
+              
+                
+                  A standardized six letter code used for each species across the Interagency ecological program
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          CommonName
+          Common name used for the species
+          string
+          
+            
+              
+                
+                  Common name used for the species
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          MarkCode
+          Indicator of whether or not fish has been marked or tagged
+          string
+          
+            
+              
+                
+                  
+                    ACT
+                    Acoustig tag present
+                  
+                  
+                    None
+                    No marks
+                  
+                  
+                    Adclipped
+                    Adipose tissue clipped
+                  
+                  
+                    others
+                    Other tags such as elastomer color tags
+                  
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          StageCode
+          Life stage designation of Chinook Salmon
+          string
+          
+            
+              
+                
+                  
+                    1
+                    Sac fry
+                  
+                  
+                    2
+                    Fry
+                  
+                  
+                    3
+                    Parr
+                  
+                  
+                    4
+                    Silver Parr
+                  
+                  
+                    5
+                    Smolt
+                  
+                  
+                    6
+                    Adult
+                  
+                
+              
+            
+          
+          
+            NA
+            No life stage assigned or fish is not a Chinook Salmon
+          
+        
+        
+          Expression
+          Maturation stage for adult-sized salmonids and osmerids
+          string
+          
+            
+              
+                
+                  
+                    E
+                    Eggs present
+                  
+                  
+                    M
+                    Milt present
+                  
+                  
+                    X
+                    No expression
+                  
+                
+              
+            
+          
+          
+            NA
+            No information recorded or not a salmonid or osmerid
+          
+        
+        
+          ForkLength
+          Length of sampled fish measured from the point of the mouth to the fork of the caudal fin
+          float
+          
+            
+              
+                millimeter
+              
+              
+                whole
+                
+                  0
+                  1900
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          RaceByLength
+          Estimated race of Chinook Salmon based on the length-at-date criteria
+          string
+          
+            
+              
+                
+                  
+                    Fall
+                    Fall-run Chinook Salmon race based on length
+                  
+                  
+                    Spring
+                    Spring-run Chinook Salmon based on length
+                  
+                  
+                    Latefall
+                    Latefall-run Chinook Salmon based on length
+                  
+                  
+                    Winter
+                    Winter-run Chinook Salmon based on length
+                  
+                  
+                    Not Raced
+                    Not categorized to any run
+                  
+                  
+                    Adult
+                    Not categorized to any run; adult salmon
+                  
+                
+              
+            
+          
+          
+            NA
+            Not a Chinook Salmon
+          
+        
+        
+          TagCode
+          Character code of coded wire tag or acoustic tag retrieved from individual
+          string
+          
+            
+              
+                
+                  Character code of coded wire tag or acoustic tag retrieved from individual
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          RaceByTag
+          Race of Chinook Salmon based on the coded wire tag or other markings
+          string
+          
+            
+              
+                
+                  Race of Chinook Salmon based on the coded wire tag or other markings
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          ArchivalID
+          Identification code assigned to samples by the Central Valley Tissue Archive
+          string
+          
+            
+              
+                
+                  Identification code assigned to samples by the Central Valley Tissue Archive
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          SpecialStudyID
+          Identification code assigned to samples by the Delta Fish Monioring Program
+          string
+          
+            
+              
+                
+                  Identification code assigned to samples by the Delta Fish Monioring Program
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          GeneticID
+          Most likely species identification based on genetic analysis.  For Chinook Salmon, race is used as identification.
+          string
+          
+            
+              
+                
+                  
+                    Fall
+                    Fall-run Chinook Salmon race based on genetics
+                  
+                  
+                    Spring
+                    Spring-run Chinook Salmon based on genetics
+                  
+                  
+                    Latefall
+                    Latefall-run Chinook Salmon based on genetics
+                  
+                  
+                    Winter
+                    Winter-run Chinook Salmon based on genetics
+                  
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          Probability1
+          The probability associated with GeneticID
+          float
+          
+            
+              
+                dimensionless
+              
+              
+                natural
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          GeneticID2
+          Second most likely species identification based on genetic analysis. For Chinook Salmon, race is used as identification.
+          string
+          
+            
+              
+                
+                  
+                    Fall
+                    Fall-run Chinook Salmon race based on genetics
+                  
+                  
+                    Spring
+                    Spring-run Chinook Salmon based on genetics
+                  
+                  
+                    Latefall
+                    Latefall-run Chinook Salmon based on genetics
+                  
+                  
+                    Winter
+                    Winter-run Chinook Salmon based on genetics
+                  
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          Probability2
+          The probability associated with value in GeneticID2
+          float
+          
+            
+              
+                dimensionless
+              
+              
+                natural
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          SexGeneID
+          Sex determination based on genetic analysis
+          string
+          
+            
+              
+                
+                  
+                    Female
+                    Classified as female based on genetic testing
+                  
+                  
+                    Male
+                    Classified as male based on genetic testing
+                  
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          Ots28
+          Chinook Salmon return timing based on the Ots 28 loci. See Narum, S.R., Di Genova, A., Micheletti, S.J. and Maass, A., 2018. Genomic variation underlying complex life-history traits revealed by genome sequencing in Chinook salmon. Proceedings of the Royal Society B: Biological Sciences, 285(1883), p.20180935.
+          string
+          
+            
+              
+                
+                  
+                    Early
+                    Early arrival to spawning ground
+                  
+                  
+                    Late
+                    Late arrival to spawning ground
+                  
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          Lab
+          Name of laboratory or principle investigator who conducted genetic analysis
+          string
+          
+            
+              
+                
+                  
+                    Meek
+                    Dr. Mariah Meek, Conservation Genomics at Michigan State University
+                  
+                  
+                    Cramer Fish Sciences
+                    Cramer Fish Sciences, Portland, OR.
+                  
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          GeneticTest
+          The genetic assay used for genetic analysis
+          string
+          
+            
+              
+                
+                  
+                    Fluidigm SNP System
+                    Single nucleotide polymorphisms, see Meek et al 2016 (https://doi.org/10.1002/ece3.2493).
+                  
+                  
+                    GTSeq
+                    Genotyping-in-Thousands by sequencing
+                  
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          GeneticModel
+          The software or quantitative model used to analyze the information from the genetic assay
+          string
+          
+            
+              
+                
+                  
+                    ONCOR
+                    ONCOR is a computer program useful for genetic mixture analysis and assignment tests. These are genetic tests for identifying the origin of individuals sampled in a mixture of individuals from genetically distinct populations. (https://www.montana.edu/kalinowski/software/oncor.html)
+                  
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          Count
+          Number of fish sampled with the measured fork length (or unmeasured)
+          float
+          
+            
+              
+                dimensionless
+              
+              
+                natural
+                
+                  1
+                  90550
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+      
+      692330
+    
+    
+      2002-2021_DJFMP_trawl_fish_and_water_quality_data.csv
+      Fish catch and water quality data from the Delta Juvenile Fish Monitoring Program Trawl Survey 2002-2021
+      
+        2002-2021_DJFMP_trawl_fish_and_water_quality_data.csv
+        186143514
+        9d17ee800be03972c296b4c64943bfdd
+        
+          
+            1
+            \r\n
+            column
+            
+              ,
+              "
+            
+          
+        
+        
+          
+            https://pasta.lternet.edu/package/data/eml/edi/244/8/4cf98db173a16731bcbb2d37ad656538
+          
+        
+      
+      
+        
+          Location
+          Full name of the sampling site/location
+          string
+          
+            
+              
+                
+                  Full name of the sampling site/location
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          RegionCode
+          Region designation for the station; 1= Lower Sacramento River, 2= North Delta, 3= Central Delta, 4= South Delta, 5= San Joaquin River, 6= Bay Area, 7= Sacramento River
+          string
+          
+            
+              
+                
+                  
+                    1
+                    Lower Sacramento River
+                  
+                  
+                    2
+                    North Sacramento-San Joaquin Delta
+                  
+                  
+                    3
+                    Central Sacramento-San Joaquin Delta
+                  
+                  
+                    4
+                    South Sacramento-San Joaquin Delta
+                  
+                  
+                    5
+                    San Joaquin River
+                  
+                  
+                    6
+                    Bay Area
+                  
+                  
+                    7
+                    Sacramento River
+                  
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          StationCode
+          Code of the station that was sampled. Abbreviated body of water, river mile, and general location within the water body
+          string
+          
+            
+              
+                
+                  Code of the station that was sampled. Abbreviated body of water, river mile, and general location within the water body
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          SampleDate
+          Date sampled
+          date
+          
+            
+              YYYY-MM-DD
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          SampleTime
+          Time sampled
+          date
+          
+            
+              hh:mm:ss
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          MethodCode
+          Sampling collection method including beach seine, Kodiak trawl, and midwater trawl; SEIN=seine, MWTR=mid-water trawl, KDTR=Kodiak trawl
+          string
+          
+            
+              
+                
+                  
+                    SEIN
+                    Beach Seine
+                  
+                  
+                    MWTR
+                    Midwater Trawl
+                  
+                  
+                    KDTR
+                    Kodiak Trawl
+                  
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          GearConditionCode
+          Overall condition of sample. 1=good sample, 2=fair, 3=poor, 9=fish gilled in trawl net, not caught properly
+          string
+          
+            
+              
+                
+                  
+                    1
+                    Good sample
+                  
+                  
+                    2
+                    Fair sample
+                  
+                  
+                    3
+                    Poor sample
+                  
+                  
+                    4
+                    No sampling done
+                  
+                  
+                    8
+                    Sea lion caught in sample; sampling cut chort
+                  
+                  
+                    9
+                    Fish that were gilled in trawl net and not caught properly
+                  
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          WeatherCode
+          Weather condition at time of sample. CLR=clear, CLD=cloud, RAN=rain, FOG=fog, NIT=night, WND=windy
+          string
+          
+            
+              
+                
+                  
+                    CLR
+                    Clear
+                  
+                  
+                    CLD
+                    Cloudy
+                  
+                  
+                    RAN
+                    Rain
+                  
+                  
+                    FOG
+                    Fog
+                  
+                  
+                    NIT
+                    Night
+                  
+                  
+                    WND
+                    Windy
+                  
+                
+              
+            
+          
+          
+            NA
+            Not recorded
+          
+        
+        
+          DO
+          Dissolved oxygen level
+          float
+          
+            
+              
+                milligramsPerLiter
+              
+              
+                real
+                
+                  1.4
+                  807
+                
+              
+            
+          
+          
+            NA
+            Not recorded
+          
+        
+        
+          WaterTemp
+          Water temperature
+          float
+          
+            
+              
+                celsius
+              
+              
+                real
+                
+                  4.5
+                  30
+                
+              
+            
+          
+          
+            NA
+            Not recorded
+          
+        
+        
+          Turbidity
+          Turbidity of water
+          float
+          
+            
+              
+                nephelometricTurbidityUnit
+              
+              
+                real
+                
+                  0.0599999986588955
+                  588
+                
+              
+            
+          
+          
+            NA
+            Not recorded
+          
+        
+        
+          Secchi
+          Secchi depth of water
+          float
+          
+            
+              
+                meter
+              
+              
+                real
+                
+                  0.0500000007450581
+                  50
+                
+              
+            
+          
+          
+            NA
+            Not recorded
+          
+        
+        
+          SpecificConductance
+          Conductivity of water at 25 degrees centigrade
+          float
+          
+            
+              
+                microSiemensPerCentimeter
+              
+              
+                real
+                
+                  1.39999997615814
+                  145399
+                
+              
+            
+          
+          
+            NA
+            Not recorded
+          
+        
+        
+          TowNumber
+          Tow number for sample
+          float
+          
+            
+              
+                dimensionless
+              
+              
+                natural
+                
+                  1
+                  62
+                
+              
+            
+          
+          
+            NA
+            Not a trawl site
+          
+        
+        
+          SamplingDirection
+          The direction in which the tow was done. U= Upstream, D= Downstream, X= Neither or not applicable
+          string
+          
+            
+              
+                
+                  
+                    U
+                    Upstream
+                  
+                  
+                    D
+                    Downstream
+                  
+                  
+                    X
+                    Neither or not applicable
+                  
+                
+              
+            
+          
+          
+            NA
+            Tow direction not recorded or site was a beach seine site
+          
+        
+        
+          TowDuration
+          Duration in minutes
+          float
+          
+            
+              
+                dimensionless
+              
+              
+                real
+                
+                  1
+                  35
+                
+              
+            
+          
+          
+            NA
+            Not recorded or site was a beach seine site
+          
+        
+        
+          FlowDebris
+          Flow meter fouled, did not operate properly
+          string
+          
+            
+              
+                
+                  
+                    Y
+                    Flow meter was fouled
+                  
+                  
+                    N
+                    Flow meter worked as intended
+                  
+                
+              
+            
+          
+          
+            NA
+            No flow meter information taken or it is a beach seine sampling event.
+          
+        
+        
+          SiteDisturbance
+          Has site been disturbed
+          string
+          
+            
+              
+                
+                  
+                    Y
+                    Site has been disturbed
+                  
+                  
+                    N
+                    Site has not been disturbed
+                  
+                
+              
+            
+          
+          
+            NA
+            Not recorded
+          
+        
+        
+          AlternateSite
+          Is site an alternative site
+          string
+          
+            
+              
+                
+                  
+                    Y
+                    Sample was conducted at an alternate site nearby
+                  
+                  
+                    N
+                    Sample was conducted at the regular location
+                  
+                
+              
+            
+          
+          
+            NA
+            Not recorded
+          
+        
+        
+          SeineLength
+          Length of beach seine
+          float
+          
+            
+              
+                meter
+              
+              
+                natural
+              
+            
+          
+          
+            NA
+            No seine length recorded or it is a trawl sampling event.
+          
+        
+        
+          SeineWidth
+          Width of beach seine
+          float
+          
+            
+              
+                meter
+              
+              
+                natural
+              
+            
+          
+          
+            NA
+            No seine width recorded or it is a trawl sampling event.
+          
+        
+        
+          SeineDepth
+          Starting depth of beach seine
+          float
+          
+            
+              
+                meter
+              
+              
+                natural
+              
+            
+          
+          
+            NA
+            No seine depth recorded or it is a trawl sampling event.
+          
+        
+        
+          FlowmeterStart
+          Starting number of flow meter
+          float
+          
+            
+              
+                dimensionless
+              
+              
+                whole
+                
+                  0
+                  9966133
+                
+              
+            
+          
+          
+            NA
+            No flow meter data taken or that it is a beach seine sampling event.
+          
+        
+        
+          FlowmeterEnd
+          End number of flow meter
+          float
+          
+            
+              
+                dimensionless
+              
+              
+                whole
+                
+                  0
+                  9991590
+                
+              
+            
+          
+          
+            NA
+            No flow meter data taken or that it is a beach seine sampling event.
+          
+        
+        
+          FlowmeterDifference
+          Difference between starting and end number for the flow meter
+          float
+          
+            
+              
+                dimensionless
+              
+              
+                natural
+                
+                  6
+                  940254
+                
+              
+            
+          
+          
+            NA
+            No flow meter data taken or that it is a beach seine sampling event.
+          
+        
+        
+          Volume
+          Estimated volume of water sampled in trawl or beach seine
+          float
+          
+            
+              
+                cubicMeter
+              
+              
+                real
+                
+                  2.99580204
+                  315148.61325948
+                
+              
+            
+          
+          
+            NA
+            Volume of water sampled could not be calculated
+          
+        
+        
+          OrganismCode
+          A unique 1 to 4 letter character code used by DJFMP  for each species
+          string
+          
+            
+              
+                
+                  A unique 1 to 4 letter character code used by DJFMP  for each species
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          IEPFishCode
+          A standardized six letter code used for each species across the Interagency ecological program
+          string
+          
+            
+              
+                
+                  A standardized six letter code used for each species across the Interagency ecological program
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          CommonName
+          Common name used for the species
+          string
+          
+            
+              
+                
+                  Common name used for the species
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          MarkCode
+          Indicator of whether or not fish has been marked or tagged
+          string
+          
+            
+              
+                
+                  
+                    ACT
+                    Acoustig tag present
+                  
+                  
+                    None
+                    No marks
+                  
+                  
+                    Adclipped
+                    Adipose tissue clipped
+                  
+                  
+                    others
+                    Other tags such as elastomer color tags
+                  
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          StageCode
+          Life stage designation of Chinook Salmon
+          string
+          
+            
+              
+                
+                  
+                    1
+                    Sac fry
+                  
+                  
+                    2
+                    Fry
+                  
+                  
+                    3
+                    Parr
+                  
+                  
+                    4
+                    Silver Parr
+                  
+                  
+                    5
+                    Smolt
+                  
+                  
+                    6
+                    Adult
+                  
+                
+              
+            
+          
+          
+            NA
+            No life stage assigned or fish is not a Chinook Salmon
+          
+        
+        
+          Expression
+          Maturation stage for adult-sized salmonids and osmerids
+          string
+          
+            
+              
+                
+                  
+                    E
+                    Eggs present
+                  
+                  
+                    M
+                    Milt present
+                  
+                  
+                    X
+                    No expression
+                  
+                
+              
+            
+          
+          
+            NA
+            No information recorded or not a salmonid or osmerid
+          
+        
+        
+          ForkLength
+          Length of sampled fish measured from the point of the mouth to the fork of the caudal fin
+          float
+          
+            
+              
+                millimeter
+              
+              
+                whole
+                
+                  0
+                  1945
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          RaceByLength
+          Estimated race of Chinook Salmon based on the length-at-date criteria
+          string
+          
+            
+              
+                
+                  
+                    Fall
+                    Fall-run Chinook Salmon race based on length
+                  
+                  
+                    Spring
+                    Spring-run Chinook Salmon based on length
+                  
+                  
+                    Latefall
+                    Latefall-run Chinook Salmon based on length
+                  
+                  
+                    Winter
+                    Winter-run Chinook Salmon based on length
+                  
+                  
+                    Not Raced
+                    Not categorized to any run
+                  
+                  
+                    Adult
+                    Not categorized to any run; adult salmon
+                  
+                
+              
+            
+          
+          
+            NA
+            Not a Chinook Salmon
+          
+        
+        
+          TagCode
+          Character code of coded wire tag or acoustic tag retrieved from individual
+          string
+          
+            
+              
+                
+                  Character code of coded wire tag or acoustic tag retrieved from individual
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          RaceByTag
+          Race of Chinook Salmon based on the coded wire tag or other markings
+          string
+          
+            
+              
+                
+                  Race of Chinook Salmon based on the coded wire tag or other markings
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          ArchivalID
+          Identification code assigned to samples by the Central Valley Tissue Archive
+          string
+          
+            
+              
+                
+                  Identification code assigned to samples by the Central Valley Tissue Archive
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          SpecialStudyID
+          Identification code assigned to samples by the Delta Fish Monioring Program
+          string
+          
+            
+              
+                
+                  Identification code assigned to samples by the Delta Fish Monioring Program
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          GeneticID
+          Most likely species identification based on genetic analysis.  For Chinook Salmon, race is used as identification.
+          string
+          
+            
+              
+                
+                  
+                    Fall
+                    Fall-run Chinook Salmon race based on genetics
+                  
+                  
+                    Spring
+                    Spring-run Chinook Salmon based on genetics
+                  
+                  
+                    Latefall
+                    Latefall-run Chinook Salmon based on genetics
+                  
+                  
+                    Winter
+                    Winter-run Chinook Salmon based on genetics
+                  
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          Probability1
+          The probability associated with GeneticID
+          float
+          
+            
+              
+                dimensionless
+              
+              
+                real
+                
+                  0.425385
+                  1
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          GeneticID2
+          Second most likely species identification based on genetic analysis. For Chinook Salmon, race is used as identification.
+          string
+          
+            
+              
+                
+                  
+                    Fall
+                    Fall-run Chinook Salmon race based on genetics
+                  
+                  
+                    Spring
+                    Spring-run Chinook Salmon based on genetics
+                  
+                  
+                    Latefall
+                    Latefall-run Chinook Salmon based on genetics
+                  
+                  
+                    Winter
+                    Winter-run Chinook Salmon based on genetics
+                  
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          Probability2
+          The probability associated with value in GeneticID2
+          float
+          
+            
+              
+                dimensionless
+              
+              
+                real
+                
+                  0
+                  0.497966
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          SexGeneID
+          Sex determination based on genetic analysis
+          string
+          
+            
+              
+                
+                  
+                    Female
+                    Classified as female based on genetic testing
+                  
+                  
+                    Male
+                    Classified as male based on genetic testing
+                  
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          Ots28
+          Chinook Salmon return timing based on the Ots 28 loci. See Narum, S.R., Di Genova, A., Micheletti, S.J. and Maass, A., 2018. Genomic variation underlying complex life-history traits revealed by genome sequencing in Chinook salmon. Proceedings of the Royal Society B: Biological Sciences, 285(1883), p.20180935.
+          string
+          
+            
+              
+                
+                  
+                    Early
+                    Early arrival to spawning ground
+                  
+                  
+                    Late
+                    Late arrival to spawning ground
+                  
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          Lab
+          Name of laboratory or principle investigator who conducted genetic analysis
+          string
+          
+            
+              
+                
+                  
+                    Meek
+                    Dr. Mariah Meek, Conservation Genomics at Michigan State University
+                  
+                  
+                    Cramer Fish Sciences
+                    Cramer Fish Sciences, Portland, OR.
+                  
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          GeneticTest
+          The genetic assay used for genetic analysis
+          string
+          
+            
+              
+                
+                  
+                    Fluidigm SNP System
+                    Single nucleotide polymorphisms, see Meek et al 2016 (https://doi.org/10.1002/ece3.2493).
+                  
+                  
+                    GTSeq
+                    Genotyping-in-Thousands by sequencing
+                  
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          GeneticModel
+          The software or quantitative model used to analyze the information from the genetic assay
+          string
+          
+            
+              
+                
+                  
+                    ONCOR
+                    ONCOR is a computer program useful for genetic mixture analysis and assignment tests. These are genetic tests for identifying the origin of individuals sampled in a mixture of individuals from genetically distinct populations. (https://www.montana.edu/kalinowski/software/oncor.html)
+                  
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          Count
+          Number of fish sampled with the measured fork length (or unmeasured)
+          float
+          
+            
+              
+                dimensionless
+              
+              
+                natural
+                
+                  1
+                  9234
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+      
+      685593
+    
+    
+      1976-2021_DJFMP_beach_seine_fish_and_water_quality_data.csv
+      Fish catch and water quality data from the Delta Juvenile Fish Monitoring Program Beach Seine Survey 1976-2021
+      
+        1976-2021_DJFMP_beach_seine_fish_and_water_quality_data.csv
+        209279855
+        98470f8d36aabd3431bb26a49bfa3f7c
+        
+          
+            1
+            \r\n
+            column
+            
+              ,
+              "
+            
+          
+        
+        
+          
+            https://pasta.lternet.edu/package/data/eml/edi/244/8/147fd5e2c7db15913b2ffa44410dc7f9
+          
+        
+      
+      
+        
+          Location
+          Full name of the sampling site/location
+          string
+          
+            
+              
+                
+                  Full name of the sampling site/location
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          RegionCode
+          Region designation for the station; 1= Lower Sacramento River, 2= North Delta, 3= Central Delta, 4= South Delta, 5= San Joaquin River, 6= Bay Area, 7= Sacramento River
+          string
+          
+            
+              
+                
+                  
+                    1
+                    Lower Sacramento River
+                  
+                  
+                    2
+                    North Sacramento-San Joaquin Delta
+                  
+                  
+                    3
+                    Central Sacramento-San Joaquin Delta
+                  
+                  
+                    4
+                    South Sacramento-San Joaquin Delta
+                  
+                  
+                    5
+                    San Joaquin River
+                  
+                  
+                    6
+                    Bay Area
+                  
+                  
+                    7
+                    Sacramento River
+                  
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          StationCode
+          Code of the station that was sampled. Abbreviated body of water, river mile, and general location within the water body
+          string
+          
+            
+              
+                
+                  Code of the station that was sampled. Abbreviated body of water, river mile, and general location within the water body
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          SampleDate
+          Date sampled
+          date
+          
+            
+              YYYY-MM-DD
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          SampleTime
+          Time sampled
+          date
+          
+            
+              hh:mm:ss
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          MethodCode
+          Sampling collection method including beach seine, Kodiak trawl, and midwater trawl; SEIN=seine, MWTR=mid-water trawl, KDTR=Kodiak trawl
+          string
+          
+            
+              
+                
+                  
+                    SEIN
+                    Beach Seine
+                  
+                  
+                    MWTR
+                    Midwater Trawl
+                  
+                  
+                    KDTR
+                    Kodiak Trawl
+                  
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          GearConditionCode
+          Overall condition of sample. 1=good sample, 2=fair, 3=poor, 9=fish gilled in trawl net, not caught properly
+          string
+          
+            
+              
+                
+                  
+                    1
+                    Good sample
+                  
+                  
+                    2
+                    Fair sample
+                  
+                  
+                    3
+                    Poor sample
+                  
+                  
+                    4
+                    No sampling done
+                  
+                  
+                    8
+                    Sea lion caught in sample; sampling cut chort
+                  
+                  
+                    9
+                    Fish that were gilled in trawl net and not caught properly
+                  
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          WeatherCode
+          Weather condition at time of sample. CLR=clear, CLD=cloud, RAN=rain, FOG=fog, NIT=night, WND=windy
+          string
+          
+            
+              
+                
+                  
+                    CLR
+                    Clear
+                  
+                  
+                    CLD
+                    Cloudy
+                  
+                  
+                    RAN
+                    Rain
+                  
+                  
+                    FOG
+                    Fog
+                  
+                  
+                    NIT
+                    Night
+                  
+                  
+                    WND
+                    Windy
+                  
+                
+              
+            
+          
+          
+            NA
+            Not recorded
+          
+        
+        
+          DO
+          Dissolved oxygen level
+          float
+          
+            
+              
+                milligramsPerLiter
+              
+              
+                real
+                
+                  1.02
+                  159.6
+                
+              
+            
+          
+          
+            NA
+            Not recorded
+          
+        
+        
+          WaterTemp
+          Water temperature
+          float
+          
+            
+              
+                celsius
+              
+              
+                real
+                
+                  3
+                  31
+                
+              
+            
+          
+          
+            NA
+            Not recorded
+          
+        
+        
+          Turbidity
+          Turbidity of water
+          float
+          
+            
+              
+                nephelometricTurbidityUnit
+              
+              
+                real
+                
+                  0.140000000596046
+                  1000
+                
+              
+            
+          
+          
+            NA
+            Not recorded
+          
+        
+        
+          Secchi
+          Secchi depth of water
+          float
+          
+            
+              
+                meter
+              
+              
+                natural
+              
+            
+          
+          
+            NA
+            Not recorded
+          
+        
+        
+          SpecificConductance
+          Conductivity of water at 25 degrees centigrade
+          float
+          
+            
+              
+                microSiemensPerCentimeter
+              
+              
+                real
+                
+                  0.575999975204468
+                  81547
+                
+              
+            
+          
+          
+            NA
+            Not recorded
+          
+        
+        
+          TowNumber
+          Tow number for sample
+          float
+          
+            
+              
+                dimensionless
+              
+              
+                natural
+              
+            
+          
+          
+            NA
+            Not a trawl site
+          
+        
+        
+          SamplingDirection
+          The direction in which the tow was done. U= Upstream, D= Downstream, X= Neither or not applicable
+          string
+          
+            
+              
+                
+                  
+                    U
+                    Upstream
+                  
+                  
+                    D
+                    Downstream
+                  
+                  
+                    X
+                    Neither or not applicable
+                  
+                
+              
+            
+          
+          
+            NA
+            Tow direction not recorded or site was a beach seine site
+          
+        
+        
+          TowDuration
+          Duration in minutes
+          float
+          
+            
+              
+                dimensionless
+              
+              
+                natural
+              
+            
+          
+          
+            NA
+            Not recorded or site was a beach seine site
+          
+        
+        
+          FlowDebris
+          Flow meter fouled, did not operate properly
+          string
+          
+            
+              
+                
+                  
+                    Y
+                    Flow meter was fouled
+                  
+                  
+                    N
+                    Flow meter worked as intended
+                  
+                
+              
+            
+          
+          
+            NA
+            No flow meter information taken or it is a beach seine sampling event.
+          
+        
+        
+          SiteDisturbance
+          Has site been disturbed
+          string
+          
+            
+              
+                
+                  
+                    Y
+                    Site has been disturbed
+                  
+                  
+                    N
+                    Site has not been disturbed
+                  
+                
+              
+            
+          
+          
+            NA
+            Not recorded
+          
+        
+        
+          AlternateSite
+          Is site an alternative site
+          string
+          
+            
+              
+                
+                  
+                    Y
+                    Sample was conducted at an alternate site nearby
+                  
+                  
+                    N
+                    Sample was conducted at the regular location
+                  
+                
+              
+            
+          
+          
+            NA
+            Not recorded
+          
+        
+        
+          SeineLength
+          Length of beach seine
+          float
+          
+            
+              
+                meter
+              
+              
+                real
+                
+                  1
+                  30
+                
+              
+            
+          
+          
+            NA
+            No seine length recorded or it is a trawl sampling event.
+          
+        
+        
+          SeineWidth
+          Width of beach seine
+          float
+          
+            
+              
+                meter
+              
+              
+                real
+                
+                  1
+                  23
+                
+              
+            
+          
+          
+            NA
+            No seine width recorded or it is a trawl sampling event.
+          
+        
+        
+          SeineDepth
+          Starting depth of beach seine
+          float
+          
+            
+              
+                meter
+              
+              
+                real
+                
+                  0.1
+                  1.5
+                
+              
+            
+          
+          
+            NA
+            No seine depth recorded or it is a trawl sampling event.
+          
+        
+        
+          FlowmeterStart
+          Starting number of flow meter
+          float
+          
+            
+              
+                dimensionless
+              
+              
+                natural
+              
+            
+          
+          
+            NA
+            No flow meter data taken or that it is a beach seine sampling event.
+          
+        
+        
+          FlowmeterEnd
+          End number of flow meter
+          float
+          
+            
+              
+                dimensionless
+              
+              
+                natural
+              
+            
+          
+          
+            NA
+            No flow meter data taken or that it is a beach seine sampling event.
+          
+        
+        
+          FlowmeterDifference
+          Difference between starting and end number for the flow meter
+          float
+          
+            
+              
+                dimensionless
+              
+              
+                natural
+              
+            
+          
+          
+            NA
+            No flow meter data taken or that it is a beach seine sampling event.
+          
+        
+        
+          Volume
+          Estimated volume of water sampled in trawl or beach seine
+          float
+          
+            
+              
+                cubicMeter
+              
+              
+                real
+                
+                  0.6
+                  173.4
+                
+              
+            
+          
+          
+            NA
+            Volume of water sampled could not be calculated
+          
+        
+        
+          OrganismCode
+          A unique 1 to 4 letter character code used by DJFMP  for each species
+          string
+          
+            
+              
+                
+                  A unique 1 to 4 letter character code used by DJFMP  for each species
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          IEPFishCode
+          A standardized six letter code used for each species across the Interagency ecological program
+          string
+          
+            
+              
+                
+                  A standardized six letter code used for each species across the Interagency ecological program
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          CommonName
+          Common name used for the species
+          string
+          
+            
+              
+                
+                  Common name used for the species
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          MarkCode
+          Indicator of whether or not fish has been marked or tagged
+          string
+          
+            
+              
+                
+                  
+                    ACT
+                    Acoustig tag present
+                  
+                  
+                    None
+                    No marks
+                  
+                  
+                    Adclipped
+                    Adipose tissue clipped
+                  
+                  
+                    others
+                    Other tags such as elastomer color tags
+                  
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          StageCode
+          Life stage designation of Chinook Salmon
+          string
+          
+            
+              
+                
+                  
+                    1
+                    Sac fry
+                  
+                  
+                    2
+                    Fry
+                  
+                  
+                    3
+                    Parr
+                  
+                  
+                    4
+                    Silver Parr
+                  
+                  
+                    5
+                    Smolt
+                  
+                  
+                    6
+                    Adult
+                  
+                
+              
+            
+          
+          
+            NA
+            No life stage assigned or fish is not a Chinook Salmon
+          
+        
+        
+          Expression
+          Maturation stage for adult-sized salmonids and osmerids
+          string
+          
+            
+              
+                
+                  
+                    E
+                    Eggs present
+                  
+                  
+                    M
+                    Milt present
+                  
+                  
+                    X
+                    No expression
+                  
+                
+              
+            
+          
+          
+            NA
+            No information recorded or not a salmonid or osmerid
+          
+        
+        
+          ForkLength
+          Length of sampled fish measured from the point of the mouth to the fork of the caudal fin
+          float
+          
+            
+              
+                millimeter
+              
+              
+                real
+                
+                  0
+                  1200
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          RaceByLength
+          Estimated race of Chinook Salmon based on the length-at-date criteria
+          string
+          
+            
+              
+                
+                  
+                    Fall
+                    Fall-run Chinook Salmon race based on length
+                  
+                  
+                    Spring
+                    Spring-run Chinook Salmon based on length
+                  
+                  
+                    Latefall
+                    Latefall-run Chinook Salmon based on length
+                  
+                  
+                    Winter
+                    Winter-run Chinook Salmon based on length
+                  
+                  
+                    Not Raced
+                    Not categorized to any run
+                  
+                  
+                    Adult
+                    Not categorized to any run; adult salmon
+                  
+                
+              
+            
+          
+          
+            NA
+            Not a Chinook Salmon
+          
+        
+        
+          TagCode
+          Character code of coded wire tag or acoustic tag retrieved from individual
+          string
+          
+            
+              
+                
+                  Character code of coded wire tag or acoustic tag retrieved from individual
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          RaceByTag
+          Race of Chinook Salmon based on the coded wire tag or other markings
+          string
+          
+            
+              
+                
+                  Race of Chinook Salmon based on the coded wire tag or other markings
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          ArchivalID
+          Identification code assigned to samples by the Central Valley Tissue Archive
+          string
+          
+            
+              
+                
+                  Identification code assigned to samples by the Central Valley Tissue Archive
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          SpecialStudyID
+          Identification code assigned to samples by the Delta Fish Monioring Program
+          string
+          
+            
+              
+                
+                  Identification code assigned to samples by the Delta Fish Monioring Program
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          GeneticID
+          Most likely species identification based on genetic analysis.  For Chinook Salmon, race is used as identification.
+          string
+          
+            
+              
+                
+                  
+                    Fall
+                    Fall-run Chinook Salmon race based on genetics
+                  
+                  
+                    Spring
+                    Spring-run Chinook Salmon based on genetics
+                  
+                  
+                    Latefall
+                    Latefall-run Chinook Salmon based on genetics
+                  
+                  
+                    Winter
+                    Winter-run Chinook Salmon based on genetics
+                  
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          Probability1
+          The probability associated with GeneticID
+          float
+          
+            
+              
+                dimensionless
+              
+              
+                natural
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          GeneticID2
+          Second most likely species identification based on genetic analysis. For Chinook Salmon, race is used as identification.
+          string
+          
+            
+              
+                
+                  
+                    Fall
+                    Fall-run Chinook Salmon race based on genetics
+                  
+                  
+                    Spring
+                    Spring-run Chinook Salmon based on genetics
+                  
+                  
+                    Latefall
+                    Latefall-run Chinook Salmon based on genetics
+                  
+                  
+                    Winter
+                    Winter-run Chinook Salmon based on genetics
+                  
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          Probability2
+          The probability associated with value in GeneticID2
+          float
+          
+            
+              
+                dimensionless
+              
+              
+                natural
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          SexGeneID
+          Sex determination based on genetic analysis
+          string
+          
+            
+              
+                
+                  
+                    Female
+                    Classified as female based on genetic testing
+                  
+                  
+                    Male
+                    Classified as male based on genetic testing
+                  
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          Ots28
+          Chinook Salmon return timing based on the Ots 28 loci. See Narum, S.R., Di Genova, A., Micheletti, S.J. and Maass, A., 2018. Genomic variation underlying complex life-history traits revealed by genome sequencing in Chinook salmon. Proceedings of the Royal Society B: Biological Sciences, 285(1883), p.20180935.
+          string
+          
+            
+              
+                
+                  
+                    Early
+                    Early arrival to spawning ground
+                  
+                  
+                    Late
+                    Late arrival to spawning ground
+                  
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          Lab
+          Name of laboratory or principle investigator who conducted genetic analysis
+          string
+          
+            
+              
+                
+                  
+                    Meek
+                    Dr. Mariah Meek, Conservation Genomics at Michigan State University
+                  
+                  
+                    Cramer Fish Sciences
+                    Cramer Fish Sciences, Portland, OR.
+                  
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          GeneticTest
+          The genetic assay used for genetic analysis
+          string
+          
+            
+              
+                
+                  
+                    Fluidigm SNP System
+                    Single nucleotide polymorphisms, see Meek et al 2016 (https://doi.org/10.1002/ece3.2493).
+                  
+                  
+                    GTSeq
+                    Genotyping-in-Thousands by sequencing
+                  
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          GeneticModel
+          The software or quantitative model used to analyze the information from the genetic assay
+          string
+          
+            
+              
+                
+                  
+                    ONCOR
+                    ONCOR is a computer program useful for genetic mixture analysis and assignment tests. These are genetic tests for identifying the origin of individuals sampled in a mixture of individuals from genetically distinct populations. (https://www.montana.edu/kalinowski/software/oncor.html)
+                  
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+        
+          Count
+          Number of fish sampled with the measured fork length (or unmeasured)
+          float
+          
+            
+              
+                dimensionless
+              
+              
+                natural
+                
+                  1
+                  12794
+                
+              
+            
+          
+          
+            NA
+            Not available
+          
+        
+      
+      875359
+    
+    
+      DJFMP_Fish_Taxonomy.csv
+      Taxon table for species including native or invasive classification
+      
+        DJFMP_Fish_Taxonomy.csv
+        22021
+        a0a20872ba7c309f5da4951a151b1e0d
+        
+          
+            1
+            \r\n
+            column
+            
+              ,
+              "
+            
+          
+        
+        
+          
+            https://pasta.lternet.edu/package/data/eml/edi/244/8/17c9974d9b7b0125c146a887f3c64bd8
+          
+        
+      
+      
+        
+          OrganismCode
+          A 1 to 4 letter character unique to each species
+          string
+          
+            
+              
+                
+                  A 1 to 4 letter character unique to each species
+                
+              
+            
+          
+        
+        
+          IEPFishCode
+          A standardized six letter code used for each species across the Interagency ecological program
+          string
+          
+            
+              
+                
+                  A standardized six letter code used for each species across the Interagency ecological program
+                
+              
+            
+          
+          
+            NA
+            unknown identification or not applicable
+          
+        
+        
+          CommonName
+          Common name used for species
+          string
+          
+            
+              
+                
+                  Common name used for species
+                
+              
+            
+          
+        
+        
+          NonNative
+          Indicator if the species is native or invasive in the San Francisco Estuary (yes=invasive, no=native)
+          string
+          
+            
+              
+                
+                  
+                    Yes
+                    Nonnative invasive species to the San Francisco Estuary
+                  
+                  
+                    No
+                    Native species to the San Francisco Estuary
+                  
+                
+              
+            
+          
+        
+        
+          Phylum
+          Taxonomic Phylum
+          string
+          
+            
+              
+                
+                  Taxonomic Phylum
+                
+              
+            
+          
+          
+            NA
+            unknown identification or not applicable
+          
+        
+        
+          Class
+          Taxonomic Class
+          string
+          
+            
+              
+                
+                  Taxonomic Class
+                
+              
+            
+          
+          
+            NA
+            unknown identification or not applicable
+          
+        
+        
+          Order
+          Taxonomic Order
+          string
+          
+            
+              
+                
+                  Taxonomic Order
+                
+              
+            
+          
+          
+            NA
+            unknown identification or not applicable
+          
+        
+        
+          Family
+          Taxonomic Family
+          string
+          
+            
+              
+                
+                  Taxonomic Family
+                
+              
+            
+          
+          
+            NA
+            unknown identification or not applicable
+          
+        
+        
+          Genus
+          Taxonomic Genus
+          string
+          
+            
+              
+                
+                  Taxonomic Genus
+                
+              
+            
+          
+          
+            NA
+            unknown identification or not applicable
+          
+        
+        
+          Species
+          Taxonomic Species
+          string
+          
+            
+              
+                
+                  Taxonomic Species
+                
+              
+            
+          
+          
+            NA
+            unknown identification or not applicable
+          
+        
+        
+          Active
+          Indicator if species is still being recorded as part of the monitoring program (1=active, 0=not active)
+          string
+          
+            
+              
+                
+                  
+                    1
+                    Species is still currently being recorded as part of the monitoring program
+                  
+                  
+                    0
+                    Species is not currently being recorded as part of the monitoring program
+                  
+                
+              
+            
+          
+        
+      
+      184
+    
+    
+      DJFMP_Site_Locations.csv
+      Site location table including coordinates
+      
+        DJFMP_Site_Locations.csv
+        5409
+        779b2ca73c5e3ed4985ac035eec7aebb
+        
+          
+            1
+            \r\n
+            column
+            
+              ,
+              "
+            
+          
+        
+        
+          
+            https://pasta.lternet.edu/package/data/eml/edi/244/8/99a038d691f27cd306ff93fdcbc03b77
+          
+        
+      
+      
+        
+          MethodCode
+          Sampling collection method including beach seine, Kodiak trawl, and midwater trawl. SEIN=seine MWTR=mid-water trawl KDTR=Kodiak trawl
+          string
+          
+            
+              
+                
+                  
+                    SEIN
+                    beach seine
+                  
+                  
+                    MWTR
+                    midwater trawl
+                  
+                  
+                    KDTR
+                    kodiak trawl
+                  
+                
+              
+            
+          
+          
+            NA
+            not available
+          
+        
+        
+          Location
+          Full name of the sampling site/location
+          string
+          
+            
+              
+                
+                  Full name of the sampling site/location
+                
+              
+            
+          
+          
+            NA
+            not available
+          
+        
+        
+          StationCode
+          A specific location unique to the Delta Juvenile Fish Monitoring Program at which fish and water quality samples was collected
+          string
+          
+            
+              
+                
+                  A specific location unique to the Delta Juvenile Fish Monitoring Program at which fish and water quality samples was collected
+                
+              
+            
+          
+          
+            NA
+            not available
+          
+        
+        
+          Latitude
+          Latitude of sample location
+          float
+          
+            
+              
+                degree
+              
+              
+                real
+                
+                  37.58019
+                  39.21999207
+                
+              
+            
+          
+          
+            NA
+            not available
+          
+        
+        
+          Longitude
+          Longitude of sample location
+          float
+          
+            
+              
+                degree
+              
+              
+                real
+                
+                  -122.4984841
+                  -121.164823
+                
+              
+            
+          
+          
+            NA
+            not available
+          
+        
+      
+      108
+    
+    
+      ChangeLog.csv
+      Log of structural changes to dataset
+      
+        ChangeLog.csv
+        1288
+        7d0825cad9500a030433c41beca3baef
+        
+          
+            text/csv
+          
+        
+        
+          
+            https://pasta.lternet.edu/package/data/eml/edi/244/8/a8d1ed0164dd1726b4115b4d377bb642
+          
+        
+      
+      unknown
+    
+  
+  
+    
+      
+        
+          conductivity unit
+        
+        
+          NTU- ratio of the amount of light transmitted through a water sample with the amount scattered at an angle of 90 degrees to one side
+        
+      
+    
+  
